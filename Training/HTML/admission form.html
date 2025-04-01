@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table align="center">
+            <caption>
+                <h2>Admission Form</h2>
+                <p>Enter your Admission Details below</p>
+                <hr>
+            </caption>
+            <tr>
+                <td><label for="">Name:</label></td>
+                <td><input type="text" placeholder="Firstname" title="Firstname" required pattern="[A-Za-z]{4,8}"></td>
+                <td><input type="text" placeholder="Middlename" title="Middlename" required pattern="[A-Za-z]{4,8}}"></td>
+                <td><input type="text" placeholder="Lastname" title="Lastname" required pattern="[A-Za-z]{4,8}"></td>
+            </tr>
+            <tr>
+                <td><label for="">Date of Birth:</td>
+                <td><input type="date" required pattern="0-9"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender:</label></td>
+                <td><input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                    <input type="radio" name="Gender">Decline to answer
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Are you Hispanic or Latino?:</label></td>
+                <td>
+                    <input type="radio" name="G">Yes
+                    <input type="radio" name="G">No
+                    <input type="radio" name="G">Decline to answer
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

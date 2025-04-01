@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table align="center">
+            <caption>
+                <h2>Customer</h2>
+            </caption>
+            <tr>
+                <td><label for="">Name:</label></td>
+                <td><input type="text" placeholder="Name" title="Name" required pattern="[A-Za-z]{25}"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email:</label></td>
+                <td><input type="email" placeholder="email" title="email" required></td>
+            </tr>
+            <tr>
+                <td><label>Investment</label></td>
+                <td>
+                    <select>
+                        <option value="" Disabled>Investment:</option>
+                        <option value="">Pen</option>
+                        <option value="">Paper</option>
+                        <option value="">book</option>
+                        <option value="">Device</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Date Joined</label></td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Active</label></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">OK</td>
+                <td align="center" colspan="2"><button type="reset">Cancel</td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

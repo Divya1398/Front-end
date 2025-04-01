@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table align="center">
+            <caption>
+                <h2>Membership Application</h2>
+                <p>To Apply for membership please complete all questions.</p>
+                <hr>
+            </caption>
+            <tr>
+                <td><label for="">Name:</label></td>
+                <td><input type="text" placeholder="Firstname" title="Firstname" pattern="[A-Z a-z]{4,12}" maxlength="8"
+                        required></td>
+                <td><input type="text" placeholder="Lastname" title="Lastname" pattern="[A-Z a-z]{4,12}" maxlength="8"
+                        required></td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                  <td colspan="2">  <input type="text" placeholder="Street Address" required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  <td colspan="2"><input type="text" placeholder="Street Address line 2" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                   <td> <input type="text" placeholder="city" required></td>
+                     <td>   <input type="text" placeholder="state/Province" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    <td><input type="text" placeholder="Postal/Zip code" pattern="[0-9]{6}" required></td><br>
+                   <td> <select>
+                        <option value="">Country</option>
+                        <option value="">India</option>
+                        <option value="">Canada</option>
+                        <option value="">USA</option>
+                        <option value="">Germeny</option>
+                        <option value="">UK</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="">E-mail</label></td>
+                <td><input type="email" placeholder="email" title="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Home Number</label></td>
+                <td> <input type="text" placeholder="Area Code" required></td>
+                <td> <input type="tel" placeholder="Phone number" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Cellular Number</label></td>
+                <td> <input type="text" placeholder="Area Code" required></td>
+                <td> <input type="tel" placeholder="Phone number" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Work Number</label></td>
+                <td> <input type="text" placeholder="Area Code" required></td>
+                <td> <input type="tel" placeholder="Phone number" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Website</label></td>
+                <td> <input type="text" placeholder="Website" required></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

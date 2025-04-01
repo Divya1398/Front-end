@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form>
+        <table align="center">
+            <caption><b><h2>Complaints</b></h2>
+                <br>
+                <p align="center">Help us Improve our service</p>
+                <hr>
+            </caption>
+            <tr>
+                <td><label for="">Full Name:</label></td>
+                <td><input type="text" placeholder="First Name" title="FName" required pattern="[A-Z a-z]{4,8}"
+                        maxlength="8"></td>
+                <td><input type="text" placeholder="Last Name" title="LName" required pattern="[A-Z a-z]{4,8}"
+                        maxlength="8"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email:</label></td>
+                <td><input type="email" placeholder="Email" title="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Phone Number:</label></td>
+                <td><input type="tel" placeholder="Number" title="Number" required pattern="[6789][0-9]{9}" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="">Where Did We Go Wrong?</label></td>
+                <td><textarea name="" id="" rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

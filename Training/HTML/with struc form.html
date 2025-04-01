@@ -13,19 +13,26 @@
             <caption align="center"><b><u>Student Registration Form Using Table in HTML</u></b></caption>
             <tr>
                 <td><label for=""> First Name:</label></td>
-                <td><input type="text" placeholder="Firstname"></td>
+                <td><input type="text" placeholder="Firstname" title="name" required pattern="[A-Z a-z]{4,8}"></td>
             </tr>
             <tr>
                 <td><label for=""> Last Name:</label></td>
-                <td><input type="text" placeholder="Lastname"></td>
+                <td><input type="text" placeholder="Lastname" title="name" pattern="[A-Z a-z]{4,8}" required></td>
             </tr>
             <tr>
                 <td><label for=""> Email ID:</label></td>
-                <td><input type="email" placeholder=" Email ID"></td>
+                <td><input type="email" placeholder=" Email ID" required title="name"></td>
             </tr>
             <tr>
                 <td> <label for="">Mobile number:</label></td>
-                <td><input type="tel" placeholder="Phone number"></td>
+                <td>
+                    <select>
+                        <option value="">+91</option>
+                        <option value="">+61</option>
+                        <option value="">+51</option>
+                </td>
+                </select>
+                <td><input type="tel" placeholder="Phone number" maxlength="10" required title="tel" pattern="[6789][0-9]{9}"></td>
             </tr>
             <tr>
                 <td> <label for=""> Gender:</label></td>
@@ -35,27 +42,27 @@
             </tr>
             <tr>
                 <td><label for="">Date of Birth(DOB):</label></td>
-                <td><input type="date"></td>
+                <td><input type="date" required title="DOB" pattern="[0-9]"></td>
             </tr>
             <tr>
                 <td><label for=""> Address:</label></td>
-                <td><textarea name="" id="" rows="10" cols="20"></textarea></td>
+                <td><textarea name="" id="" rows="10" cols="20" required pattern="[A-Z a-z 0-9]"></textarea></td>
             </tr>
             <tr>
                 <td><label for="">City:</label></td>
-                <td><input type="text"></td>
+                <td><input type="text" required pattern="[A-Z a-z]" maxlength="10"></td>
             </tr>
             <tr>
                 <td><label for="">Pin code:</label></td>
-                <td><input type="text"></td>
+                <td><input type="text" required pattern="[0-9]" maxlength="8"></td>
             </tr>
             <tr>
                 <td><label for="">State:</label></td>
-                <td><input type="text"></td>
+                <td><input type="text" required pattern="[A-Z a-z]" maxlength="8"></td>
             </tr>
             <tr>
                 <td><label for="">Country:</label></td>
-                <td><input type="text"></td>
+                <td><input type="text" required pattern="[A-Z a-z]" maxlength="10"></td>
             </tr>
             <tr>
                 <td><label for="">Hobbies:</label></td>
@@ -96,9 +103,9 @@
                 <td><input type="submit" align="center"></td>
                 <td><input type="reset" align="center"></td>
             </tr>
-            </table>
+        </table>
     </form>
-    
-</body>
-</html>
 
+</body>
+
+</html>
