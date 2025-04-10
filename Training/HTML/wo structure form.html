@@ -11,15 +11,15 @@
     <form action="" align="left">
         <div>
             <label for="">Firstname</label>
-            <input type="text" placeholder="" required title="name" pattern="[A-Z a-z]" maxlength="5">
+            <input type="text" placeholder="" required title="name" pattern="[A-Za-z]{4,12}" maxlength="12">
         </div>
         <div>
             <label for="">Middlename</label>
-            <input type="text" placeholder="" title="" value=""  required title="name" pattern="[A-Z a-z]" maxlength="5">
+            <input type="text" placeholder="" title="" value=""  required title="name" pattern="[A-Za-z]{4,12}" maxlength="12">
         </div>
         <div>
             <label for="">Lastname</label>
-            <input type="text" placeholder="" title="" value=""  required title="name" pattern="[A-Z a-z]" maxlength="5">
+            <input type="text" placeholder="" title="" value=""  required title="name" pattern="[A-Za-z]{4,12}" maxlength="12">
         </div>
         <div>
             <select>
@@ -47,15 +47,15 @@
         </div>
         <div>
             <label for="">email</label>
-            <input type="email" placeholder="">
+            <input type="email" placeholder="email" pattern="[a-z0-9.]+@+[a-z]+.+[a-z]{2,3}" required>
         </div>
         <div>
             <label for="">password</label>
-            <input type="password" placeholder="password" title="password" pattern="[A-Z][A-Z 0-9]{8,12}" maxlength="12" required>
+            <input type="password" placeholder="password" title="password" pattern="[A-Z][A-Za-z0-9]{8,12}" maxlength="12" required>
         </div>
         <div>
             <label for="">Re-type password</label>
-            <input type="password" placeholder=" password" title="password" pattern="[A-Z][A-Z 0-9]{8,12}" maxlength="12" required>
+            <input type="password" placeholder=" password" title="password" pattern="[A-Z][A-Za-z0-9]{8,12}" maxlength="12" required>
         </div>
         <div>
             <input type="submit">

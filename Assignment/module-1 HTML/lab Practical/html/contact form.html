@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body align="center">
+    <caption>
+        <h2><u>CONTACT FORM</u></h2>
+    </caption>
+    <form>
+        <table align="center" cellspacing="10">
+            <tr>
+                <td><label for="">Full Name:</label></td>
+                <td><input type="text" placeholder="Firstname" title="name" maxlength="20" required
+                        pattern="[A-Za-z]{3,10}"></td>
+                <td><input type="text" placeholder="Lastname" title="name" maxlength="20" required
+                        pattern="[A-Za-z]{3,10}"></td>
+            </tr>
+            <tr>
+                <td><label for="">Phone Number:</label></td>
+                <td><input type="tel" placeholder="Number" title="Number" required pattern="[6789][0-9]{9}"
+                        maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email ID:</label></td>
+                <td><input type="email" placeholder="email" title="email" required
+                        pattern="[a-z0-9.]+@+[a-z]+.+[a-z]{2,3}" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><label for="">Subject:</label></td>
+                <td><select>
+                        <option value="" disabled>---Select a Subject---</option>
+                        <option value="">General Inquiry</option>
+                        <option value="">Support</option>
+                        <option value="">Feedback</option>
+                    </select> </td>
+            </tr>
+            <tr>
+                <td><label for="">Message:</label></td>
+                <td><textarea name="" id="" rows="10" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

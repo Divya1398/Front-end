@@ -1,0 +1,38 @@
+.h2 {
+    color: red;
+    text-align: center;
+}
+
+.ab {
+    border-style: solid;
+    width: 950px;
+}
+
+.contain {
+    font-family: 'Times New Roman';
+    font-size: medium;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 1px auto;
+}
+
+.input {
+    padding-left: 50%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.label {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.spe {
+    margin-left: 50%;
+    background-color: green;
+}

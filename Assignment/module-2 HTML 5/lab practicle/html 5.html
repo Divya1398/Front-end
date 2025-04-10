@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video height="400px" loop controls src="/videoplayback.mp4" muted loop autoplay></video>
+    <audio controls src="/gorila-315977.mp3" muted loop autoplay ></audio>
+    <svg view box="10,10,10,10" strok="red" fill="green">
+        <circle cx="40" cy="40" r="40">
+    </svg>
+    <svg view box="10,10,10,10" strok="red" fill="green">
+        <rect x="40" y="40" height="400px" width="300px" fill="blue" />
+    </svg>
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"></canvas>
+
+        <script>
+            const canvas= document.getElementById("mycanvas");
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'aqua';
+            ctx.fillRect(10, 10, 100, 50);
+
+        </Script>
+    
+</body>
+
+</html>

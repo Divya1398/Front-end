@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="/12.jpg">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <center>
+    <form class="ab">
+        <h2 class="h2"><u>Student Registration Details</u></h2>
+        <div class="contain">
+            <label class="label">First Name:</label>
+            <input type="text" placeholder="First Name" class="input" title="Name" pattern="[A-Za-z]{3,6}" required>
+        </div>
+        <div class="contain">
+            <label class="label">Last Name:</label>
+            <input type="text" placeholder="Last Name" class="input" title="Name" pattern="[A-Za-z]{3,6}" required>
+        </div>
+        <div class="contain">
+            <label class="label">Email:</label>
+            <input type="text" placeholder="It Should contain @.." class="input"  title="email"
+            pattern="[a-z0-9.]+@+[a-z]+.+[a-z]{2,3}" required>
+        </div>
+        <div class="contain">
+            <label class="label">Mobile:</label>
+            <input type="tel" placeholder="Only 10 Digits allow" class="input" title="mobile" pattern="[6789][0-9]{9}" maxlength="10" required>
+        </div>
+        <div class="contain">
+            <label class="label">Gender:</label>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+        </div>
+        <div class="contain">
+            <label class="label">Date of Birth:</label>
+            <input type="date" required>
+        </div>
+        <div class="contain">
+            <label class="label">Address:</label>
+            <textarea rows="10" class="input" title="Address" required></textarea>
+        </div>
+        <div class="contain">
+            <label class="label">City:</label>
+            <input type="text" placeholder="city" class="input" required title="city" pattern="[A-Za-z]{5,15}">
+        </div>
+        <div class="contain">
+            <label class="label">Area PIN:</label>
+            <input type="text" placeholder="PIN" class="input" title="pin" required pattern="[0-9]{3,8}">
+        </div>
+        <div class="contain">
+            <label class="label">State:</label>
+            <input type="text" placeholder="State" class="input" title="State" required pattern="[A-Za-z]{3,8}">
+        </div>
+        <div class="contain">
+            <label class="label">Qualification:</label>
+            <select>
+                <option value="" disabled>your Qualification</option>
+                <option value="">SSC</option>
+                <option value="">HSC</option>
+                <option value="">BE</option>
+                <option value="">ME</option>
+                <option value="">BCA</option>
+                <option value="">MCA</option>
+            </select>
+        </div>
+        <div class="contain">
+            <label class="label">Specialization:</label>
+            <label><input type="checkbox">Computer Science</label> <br>
+            <label><input type="checkbox">Information Technology</label><br>
+            <label><input type="checkbox">Computer Architecture</label>
+            <label><input type="checkbox">Tele Communication</label>
+         </div>
+         <div class="contain">
+            <label class="label">Password:</label>
+            <input type="text" class="input" title="password" maxlength="12" pattern="[A-Za-z0-9@.]{8,12}">
+         </div>
+         <div class="contain">
+            <input type="submit" value="Registered" class="spe">
+            </div>
+    </form>
+</center>
+</body>
+
+</html>
