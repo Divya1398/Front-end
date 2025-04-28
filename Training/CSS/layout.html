@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            position: relative;
+            background-color: aqua;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+        }
+
+        li::after {
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: black;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            transition: .5s;
+        }
+
+        li:hover::after {
+            width: 100%;
+        }
+
+        .sec {
+            display: flex;
+            row-gap: 20px;
+            column-gap: 20px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            height: 400px;
+            width: 25%;
+            border: 2px solid;
+            display: inline-block;
+            padding: 2px 0;
+            margin: 20px;
+            position: relative;
+
+        }
+
+        .sec1 {
+            display: flex;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .box2 {
+            height: 400px;
+            width: 25%;
+            border: 2px solid;
+            display: inline-block;
+            padding: 50px 0;
+            margin: 20px;
+
+        }
+
+        .img {
+            height: 200px;
+            position: relative;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg);
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            font-weight: bolder;
+            padding-left: 40px;
+            position: absolute;
+            bottom: 0%;
+            color: lightcoral;
+
+        }
+
+        #btm #prc #btn {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
+
+        .img,
+        .bottom,
+        .price,
+        .button1 {
+            height: 85%;
+            width: 100%;
+
+        }
+
+        .price {
+            height: 20px;
+            padding-left: 50px;
+            position: absolute;
+            top: 95%;
+            display: flex;
+            font-weight: bolder;
+            font-size: larger
+        }
+
+        .button1 {
+            height: 25px;
+            width: 200px;
+            position: absolute;
+            top: 110%;
+            left: 10%;
+            background-color: aqua;
+            color: white;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .button:hover .button1 {
+            box-shadow: 0 0 0 4px white, 0 0 0 8px #00d1b2;
+            cursor: pointer;
+        }
+
+        .hov {
+            background-color: black;
+            color: white;
+            justify-self: start;
+            align-self: start;
+            width: 220px;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+
+        .hov,
+        .h3 {
+            font-size: 15px;
+            font: weight 500px;
+            text-align: center;
+            padding-left: 50px;
+
+        }
+
+        .img:hover .hov {
+            transform: translateY(1200%);
+            visibility: visible;
+
+        }
+
+        .sec {
+            display: flex;
+        }
+
+        .sec span {
+            background-color: orangered;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+
+        }
+
+        .img1 {
+            height: 200px;
+            position: relative;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg);
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            font-weight: bolder;
+            padding-left: 28px;
+            position: absolute;
+            bottom: 0%;
+            color: lightcoral;
+        }
+
+        #btm1 #prc1 #btn1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .img1,
+        .bottom1,
+        .price1,
+        .button2 {
+            height: 85%;
+            width: 100%;
+
+        }
+
+        .price1 {
+            height: 20px;
+            padding-left: 75px;
+            position: absolute;
+            top: 95%;
+            display: flex;
+            font-weight: bolder;
+            font-size: larger
+        }
+
+        .button2 {
+            height: 25px;
+            width: 200px;
+            position: absolute;
+            /* top: 0%; */
+            left: 4%;
+            background-color: aqua;
+            color: white;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .button1:hover .button2 {
+            box-shadow: 0 0 0 4px white, 0 0 0 8px #00d1b2;
+            cursor: pointer;
+        }
+
+        .box1 {
+            display: flex;
+        }
+
+        .box1 .img1 span {
+            background-color: orangered;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+
+        }
+
+        .hov1 {
+            background-color: black;
+            color: white;
+            justify-self: start;
+            align-self: start;
+            width: 220px;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+
+        .hov1,
+        .h3 {
+            font-size: 15px;
+            font: weight 500px;
+            text-align: center;
+            padding-left: 50px;
+
+        }
+
+        .img1:hover .hov1 {
+            transform: translateY(1200%);
+            visibility: visible;
+
+        }
+
+        .box1 {
+            display: flex;
+            height: 400px;
+        }
+
+        .img2 {
+            height: 100px;
+            /* width: 90%; */
+            position: relative;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg);
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bolder;
+            padding-left: 28px;
+            position: absolute;
+            top: 79%;
+            bottom: 0%;
+            color: lightcoral;
+        }
+
+        #btm2 #prc2 #btn2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .img2,
+        .bottom2,
+        .price2,
+        .button3 {
+            height: 85%;
+            width: 100%;
+
+        }
+
+        .price2 {
+            height: 20px;
+            padding-left: 75px;
+            position: absolute;
+            top: 90%;
+            display: flex;
+            font-weight: bolder;
+            font-size: larger
+        }
+
+        .button3 {
+            height: 25px;
+            /* width: 200px; */
+            position: absolute;
+            top: 100%;
+            bottom: 0%;
+            left: 15%;
+            background-color: aqua;
+            color: white;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .button2:hover .button3 {
+            box-shadow: 0 0 0 4px white, 0 0 0 8px #00d1b2;
+            cursor: pointer;
+        }
+
+        /* .box1 {
+            display: flex;
+        } */
+
+        .box1 .img2 span {
+            background-color: orangered;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+
+        }
+
+        .hov2 {
+            background-color: black;
+            color: white;
+            justify-self: start;
+            align-self: start;
+            width: 220px;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+
+        .hov2,
+        .h3 {
+            font-size: 15px;
+            font: weight 500px;
+            text-align: center;
+            padding-left: 50px;
+
+        }
+
+        .img2:hover .hov2 {
+            transform: translateY(1200%);
+            visibility: visible;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="" target="_blank">Home</a></li>
+                <li><a href="" target="_blank">About</a></li>
+                <li><a href="" target="_blank">Contact</a></li>
+                <li><a href="" target="_blank">Shopping</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sec">
+        <div class="box1">
+            <div class="img">
+                <span>NEW</span>
+                <div class="hov">
+                    <h3> Quick View</h3>
+                </div>
+                <div class="bottom" id="btm">
+                    <h1>Analog Watch</h1>
+                    <div class="price" id="prc">&dollar;160.99&nbsp;&nbsp;&nbsp;&nbsp; <del>&dollar;290.71</del></div>
+                    <div class="button">
+                        <button class="button1" id="btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="img1">
+                <span>NEW</span>
+                <div class="hov1">
+                    <h3> Quick View</h3>
+                </div>
+                <div class="bottom1" id="btm1">
+                    <h1>REVERSIBLE BELT</h1>
+                    <div class="price1" id="prc1">&dollar;30.99&nbsp;&nbsp;&nbsp;&nbsp; <del>&dollar;50.71</del></div>
+                    <div class="button1">
+                        <button class="button2" id="btn2">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="img2">
+                <span>NEW</span>
+                <div class="hov2">
+                    <h3> Quick View</h3>
+                </div>
+                <div class="bottom2" id="btm2">
+                    <h1>FORMAL BLUE SHIRT</h1>
+                    <div class="price2" id="prc2">&dollar;45.99&nbsp;&nbsp;&nbsp;&nbsp; <del>&dollar;69.71</del></div>
+                    <div class="button2">
+                        <div class="button3" id="btn3">ADD TO CART</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="box1"></div>
+    </section>
+    <!-- <section class="sec1">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+    </section> -->
+</body>
+
+</html>

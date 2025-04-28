@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ul .list {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .nav {
+            list-style: none;
+            position: absolute;
+            background-color: aqua;
+            top: 100%;
+            left: 0;
+            padding: 0;
+            display: none;
+        }
+
+        .nav li {
+            border: 2px solid;
+            padding: 7px 12px;
+        }
+
+        .list:hover .nav {
+            display: block;
+        }
+
+        .content {
+            display: inline-block;
+            position: relative;
+            /* padding: 10px 20px; */
+        }
+
+        .nav1 {
+            list-style-type: none;
+            border: 2px solid;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            display: none;
+        }
+
+        .nav1 li {
+            padding: 7px 20px; 
+            border: 2px solid;
+            display: block;
+            
+        }
+
+        .content:hover .nav1 {
+            display: block;
+        }
+        .content1 {
+            display: inline-block;
+            position: relative;
+            padding: 10px 20px;
+        }
+        .nav2 {
+            list-style-type: none;
+            border: 2px solid;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            display: none;
+        }
+        .nav2 li {
+            padding: 7px 12px;
+            border: 2px solid;
+            display: block;
+        }
+
+        .content1:hover .nav2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul">
+        <li class="list">Home
+            <ul class="nav">
+                <li>Home 1</li>
+                <li>Home 2</li>
+                <li class="content">Home 3
+                    <ul class="nav1">
+                        <li>Home 6</li>
+                        <li>Home 7</li>
+                        <li>Home 8</li>
+                        <li>home 9</li>
+                    </ul>
+                </li>
+                <li>Home 4</li>
+                <li>Home 5</li>
+            </ul>
+        </li>
+        <li class="list">About
+            <ul class="nav">
+                <li>About 1</li>
+                <li class="content1">About 2
+                    <ul class="nav2">
+                        <li>About 4</li>
+                        <li>About 5</li>
+                        <li>About 6</li>
+                        <li>About 7</li>
+                    </ul>
+                </li>
+                <li>About 3</li>
+
+            </ul>
+        </li>
+        <li class="list">Contact</li>
+        <li class="list">Help</li>
+    </ul>
+</body>
+
+</html>

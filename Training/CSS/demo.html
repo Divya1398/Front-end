@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            position: relative;
+            background-color: aqua;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+        }
+
+        li::after {
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: black;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            transition: .5s;
+        }
+
+        li:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="" target="_blank">Home</a></li>
+                <li><a href="" target="_blank">About</a></li>
+                <li><a href="" target="_blank">Contact</a></li>
+                <li><a href="" target="_blank">Shopping</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
