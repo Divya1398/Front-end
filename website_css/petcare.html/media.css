@@ -1,0 +1,153 @@
+@media only screen and (max-width:1160px) {}
+
+@media only screen and (max-width:992px) {
+    .data .row {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 10px 0;
+    }
+
+    .data .row .col {
+        width: 60%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .card-data1 .row1 {
+        display: block;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .content .content-btn {
+        padding-left: 50px;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .card-data1 .row1 .col1 {
+        width: 50%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+    
+
+
+@media only screen and (max-width:768px) {
+    .navlist {
+        display: none;
+    }
+
+    .nav-b {
+        display: block;
+    }
+
+    .nav-i {
+        display: none;
+    }
+
+    .header-main .header-p {
+        width: 90%;
+    }
+
+    .header-main .header-btn {
+        width: 150px;
+    }
+
+    .header-main {
+        padding: 60px 0px;
+    }
+
+    .title-main .title-p {
+        width: 90%;
+    }
+
+    .card-data .row {
+        flex-direction: column;
+
+    }
+
+    .card-data .row .col {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .card .row {
+        flex-direction: column;
+        padding: 10px 0;
+        justify-items: center;
+        }
+    
+        .card .row .col {
+        text-align: center;
+        width: 50%;
+        padding: 10px 0;
+        }
+    
+        .row .col2 {
+        text-align: center;
+        width: 50%;
+        padding: 10px 0;
+        }
+    
+        .card1 .row1 {
+        flex-direction: column;
+        padding: 10px 0;
+        justify-items: center;
+        }
+    
+        .card1 .row1 .col-A {
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        padding: 10px 50px;
+        }
+    
+        .card1 .row1 .col-B {
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        padding: 10px 50px;
+        }
+        .circle {
+            display: block;
+            align-items: center;
+            /* width: 200px;
+            height: 200px; */
+            margin: 20px auto;
+        }
+        
+        .content .content-p {
+            width: 100%;
+        
+        }
+        .sec .sec-p {
+            width: 100%;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+    .card-data .row .col {
+        width: 90%;
+
+    }
+}
