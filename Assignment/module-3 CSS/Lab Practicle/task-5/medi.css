@@ -1,0 +1,13 @@
+@media (max-width: 480px) {
+    .title {
+      font-size: 1.75rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  }

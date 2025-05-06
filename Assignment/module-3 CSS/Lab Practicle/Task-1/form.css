@@ -1,0 +1,48 @@
+#contact-form {
+    width: 500px;
+    background-color: lightgray;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.07);
+    margin: 50px auto;
+}
+
+.Contact-title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.contain {
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text {
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: blue;
+}

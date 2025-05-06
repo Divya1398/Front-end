@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="Stylesheet" href="/Lab Practicle/Task-1/form.css">
+</head>
+
+<body>
+    <form id="contact-form">
+        <h2 class="Contact-title">Contact Us</h2>
+        <div class="contain">
+            <label for="">Full Name:</label>
+            <input type="text" class="form-input" placeholder="Firstname" title="name" maxlength="20" required
+                pattern="[A-Za-z]{3,10}">
+            <input type="text" class="form-input" placeholder="Lastname" title="name" maxlength="20" required
+                pattern="[A-Za-z]{3,10}" />
+            </div>
+            <div class="contain">
+                <label for="">Phone Number:</label>
+                <input type="tel" class="form-input" placeholder="Number" title="Number" required
+                    pattern="[6789][0-9]{9}" maxlength="10">
+            </div>
+            <div class="contain">
+                <label for="">Email ID:</label>
+                <input type="email" class="form-input" placeholder="email" title="email" required pattern="[a-z0-9.]+@+[a-z]+.+[a-z]{2,3}"
+                    maxlength="30">
+            </div>
+            <div class="contain">
+                <label for="">Subject:</label>
+                <select>
+                    <option value="" disabled>---Select a Subject---</option>
+                    <option value="">General Inquiry</option>
+                    <option value="">Support</option>
+                    <option value="">Feedback</option>
+                </select> 
+            </div>
+            <div class="contain">
+                <label for="">Message:</label>
+                <textarea name="" id="" rows="10" cols="20" class="text"></textarea>
+            </div>
+            <div class="btn">
+                <div>Submit</div>
+                <!-- <button type="submit">Submit</button> -->
+            </div>
+
+
+
+    </form>
+
+</body>
+
+</html>

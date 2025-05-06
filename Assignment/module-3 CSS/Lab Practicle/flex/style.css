@@ -1,0 +1,72 @@
+/* Reset default margins and paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set body and html to take full height */
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container holds the entire layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header and Footer styling */
+  .header, .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Content area holds sidebar and main content */
+  .content {
+    display: flex;
+    flex: 1;
+    background-color: #f4f4f4;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    background-color: #ccc;
+    padding: 1rem;
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Main content styling */
+  .main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Try changing to center, space-between, etc. */
+    align-items: flex-start;     /* Try changing to center, flex-end, etc. */
+  }
+  
+  .main section {
+    margin-bottom: 2rem;
+  }
+
+
+  

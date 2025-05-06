@@ -1,0 +1,654 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+#header {
+    background-color: #F2F9F4;
+}
+
+.nav-color {
+    /* background-color: #6c9894; */
+}
+
+.navbar {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar .logo {
+    width: 50%;
+    background-color: #6c9894;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.navlist {
+    text-align: right;
+    background-image: url(D:\Front-end\Assignment\module-3 CSS\Lab Practicle\flex\image);
+    width: 450%;
+    padding: 10px 10px;
+    background-size: 100% 100%;
+    padding-left: 15px;
+}
+
+.navlist .list {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.navlist .list .nav-a {
+    text-decoration: none;
+    font-size: 21px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Baloo Bhai";
+}
+
+.navbar .icon .nav-b {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-b {
+    display: none;
+}
+
+/* header end */
+
+/* title start */
+#title {
+    margin: 50px 0;
+    background-image: url();
+    background-size: 100% 210%;
+}
+
+.card .row {
+    margin: 20px 0;
+    padding: 10px 0;
+    display: flex;
+}
+
+.card .row .col {
+    text-align: center;
+    width: 40%;
+    /* border: 2px solid; */
+}
+
+.card .row .col1 {
+    text-align: center;
+    width: 60%;
+    /* border: 2px solid; */
+}
+
+.col .col-img {
+    padding-top: 75px;
+    padding-left: 60px;
+    width: 50%;
+    height: 50%;
+}
+
+.col1 {
+    text-align: center;
+    justify-items: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.col1 .col-h1 {
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: clamp(20px, 5vw, 100px);
+    /* font-size: 100px; */
+    color: #6c9894;
+    font-family: "Baloo Bhai";
+}
+
+.col1 .col-p {
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 55%;
+    font-size: clamp(16px, 2.1vw, 21px);
+    /* font-size: 21px; */
+    color: #6c9894;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.col1 .col-btn {
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 30%;
+    border-radius: 20px;
+    padding: 5px 5px;
+    background-color: #6c9894;
+    font-size: 17px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fefefc;
+    font-weight: 700;
+    font-family: "Lato";
+}
+
+/* title end */
+
+/* section-1 start */
+#sec-1 {
+    background-color: #6c9894;
+    padding: 30px 0;
+}
+
+.sec-main .sec-h1 {
+    font-size: clamp(16px, 7.5vw, 75px);
+    /* font-size: 75px; */
+    color: #f4f9f4;
+    font-family: "Baloo Bhai";
+    text-align: center;
+}
+
+.sec-main .sec-p {
+    margin: 20px auto;
+    width: 55%;
+    font-size: clamp(16px, 3.0vw, 30px);
+    /* font-size: 30px; */
+    color: #f4f9f4;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-data .row .col {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-data .row .col::after {
+    content: url(/image/Design1.png);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+}
+
+.card-data .row {
+    display: flex;
+}
+
+.card-data .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+}
+
+.card .card-img {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.card-content {
+    color: #f4f9f4;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.card-content .card-content-h4 {
+    color: #f4f9f4;
+    margin-top: 20%;
+    font-size: clamp(16px, 3.0vw, 37px);
+    /* font-size: 37px; */
+    font-family: "Baloo Bhai";
+}
+
+.card-content .card-content-p {
+    color: #f4f9f4;
+    margin: 10px auto;
+    width: 70%;
+    font-size: clamp(16px, 2.1vw, 22px);
+    /* font-size: 22px; */
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+/* section-1 end */
+
+/* section-2 start */
+#sec-2 {
+    background: url(/image/Background-2.png);
+    background-size: 100% 100%;
+}
+
+.sec-2-main {
+    margin: 10px auto;
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+    color: #6c9894;
+    text-align: center;
+}
+
+.sec-2-h1 {
+    font-size: clamp(16px, 7.5vw, 75px);
+    /* font-size: 75px; */
+    font-family: "Baloo Bhai";
+}
+
+.sec-2-p {
+    padding-top: 10px;
+    width: 50%;
+    font-size: clamp(16px, 3.0vw, 30px);
+    /* font-size: 30px; */
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.circle {
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+    /* background-color: #6c9894; */
+    border: 5px solid #6c9894;
+    margin-bottom: 50px;
+}
+
+.card-content {
+    margin: 50px 50px;
+    /* padding: 50px 50px; */
+    color: #6c9894;
+    text-align: center;
+    font-family: "Myriad Pro";
+}
+
+.card-content .card-h1 {
+    padding-top: 35px;
+    font-size: clamp(16px, 6.7vw, 67px);
+    /* font-size: 67px; */
+}
+
+.card-content .card-p {
+    width: 100%;
+    font-size: clamp(16px, 3.0vw, 27px);
+    /* font-size: 27px; */
+}
+
+/* section-2 end */
+
+/* section-3 start */
+#sec-3 {
+    background-color: #6c9894;
+}
+
+.card-main .row {
+    display: flex;
+}
+
+.card-main .row .col {
+    width: 40%;
+    /* border: 2px solid; */
+}
+
+.card-main .row .col1 {
+    /* border: 2px solid; */
+    width: 60%;
+}
+
+.card .card-img {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.card {
+    color: #f4f9f4;
+
+}
+
+.card .card-h2 {
+    color: #f4f9f4;
+    text-align: left;
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: clamp(16px, 7.5vw, 75px);
+    /* font-size: 70px; */
+    font-family: "Baloo Bhai";
+}
+
+.card .card-p1 {
+    text-align: left;
+    color: #f4f9f4;
+    margin: 10px auto;
+    font-size: clamp(16px, 3.0vw, 30px);
+    /* font-size: 30px; */
+    font-weight: 400;
+    font-family: "Montserrat";
+    width: 100%;
+}
+
+.btn {
+    margin: 20px 0;
+    padding: 10px 30px;
+    font-size: 25px;
+    color: #6c9894;
+    font-family: "Baloo Bhai";
+    text-align: center;
+    cursor: pointer;
+}
+
+/* section-3 end */
+
+/* section-4 start */
+#sec-4 {
+    background-color: #F0F9F3;
+}
+
+.card-main1 .row {
+    display: flex;
+}
+
+.card-main1 .row .col1 {
+    width: 60%;
+    /* border: 2px solid; */
+}
+
+.card-main1 .row .col2 {
+    width: 40%;
+    /* border: 2px solid; */
+}
+
+.card1 .card-img {
+    margin: 0 10px;
+    width: 70%;
+}
+
+.card1 .card-h3 {
+    text-align: left;
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: clamp(16px, 7.5vw, 75px);
+    /* font-size: 75px; */
+    color: #6c9894;
+    font-family: "Baloo Bhai";
+}
+
+.card1 .card-p2 {
+    text-align: left;
+    margin: 10px auto;
+    font-size: clamp(16px, 3.0vw, 30px);
+    /* font-size: 30px; */
+    color: #6c9894;
+    font-weight: 400;
+    font-family: "Montserrat";
+    width: 100%;
+}
+
+.card1 .btn1 {
+    justify-content: left;
+    align-content: left;
+    margin: 20px 0;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #6c9894;
+    font-size: 25px;
+    color: #f4f9f4;
+    font-family: "Baloo Bhai";
+    text-align: center;
+}
+
+/* section-4 end */
+/* section-5 start */
+#sec-5 {
+    background-color: #6c9894;
+}
+
+.header-main {
+    padding: 50px 0;
+    color: #f4f9f4;
+    text-align: center;
+}
+
+.header-main .header-h1 {
+    font-size: clamp(16px, 7.5vw, 75px);
+    /* font-size: 75px; */
+    font-family: "Baloo Bhai";
+}
+
+.header-main .header-p {
+    margin: 0 auto;
+    width: 52%;
+    font-size: clamp(16px, 3.5vw, 30px);
+    /* font-size: 30px; */
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.card-data1 .row1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.card-data1 .row1 .col1 {
+    width: 33.33%;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.card1 {
+    text-align: center;
+    color: #6c9894;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.card1 .card1-h3,
+.card1-price {
+    font-size: clamp(16px, 3.7vw, 37px);
+    /* font-size: 37px; */
+    color: #6c9894;
+    font-family: "Baloo Bhai";
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card1 .card1-img {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.card1 .card1-p {
+    width: 70%;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: clamp(16px, 2.1vw, 22px);
+    font-weight: 400;
+    font-family: "Poppins";
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.card1 .card1-btn {
+    background-color: #6c9894;
+    color: #ffffff;
+    font-family: "Baloo Bhai";
+    text-align: center;
+    font-size: clamp(16px, 2.3vw, 25px);
+    color: #ffffff;
+    font-weight: 700;
+    width: 250px;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* section-5 end */
+
+/* section-6 start */
+#sec-6 {
+    background: url(/image/img-6.png);
+    background-size: 100% 100%;
+}
+
+.main {
+    padding: 40px 20px;
+    margin: 50px auto;
+    width: 50%;
+    /* border: 2px solid; */
+    display: flex;
+    background: url(/image/Design-2.png);
+    background-size: 100% 100%;
+}
+
+.main .img7 {
+    padding: 40px 95px;
+    justify-items: center;
+    align-items: center;
+}
+
+.para {
+    margin: 0 auto;
+    width: 80%;
+    font-size: clamp(16px, 5.8vw, 58px);
+    /* font-size: 58px; */
+    color: #6c9894;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-h2 {
+    margin: 20px 0;
+    padding: 20px 0;
+    font-size: clamp(16px, 5.8vw, 58px);
+    /* font-size: 58px; */
+    color: #6c9894;
+    font-family: "Baloo Bhai";
+    text-align: center;
+}
+
+/* section-6 end */
+/* section-7 start */
+#sec-7 {
+    background-color: #6c9894;
+}
+.main1{
+    margin: 50px 0;
+    padding: 50px 0;
+    
+}
+
+.main-h2 {
+    font-size: clamp(16px, 7.0vw, 75px);
+    /* font-size: 75px; */
+    color: #f4f9f4;
+    font-family: "Baloo Bhai";
+    text-align: center;
+}
+
+.main-p {
+    margin: 0 auto;
+    width: 55%;
+    font-size: clamp(16px, 3.0vw, 30px);
+    /* font-size: 30px; */
+    color: #f4f9f4;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+.subscribe-box{
+    margin: 20px 0;
+    margin-left: 450px;
+    background-color: #fff6e5;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.subscribe-box input {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+}
+.subscribe-box button{
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* section-7 end */
+/* footer start */
+#footer {
+    background-color: #F0F9F3;
+    padding: 60px 0;
+}
+
+#footer .row {
+    display: flex;
+}
+
+#footer .row .col-4 {
+    width: 40%;
+}
+
+#footer .row .col-6 {
+    width: 60%;
+}
+
+.footer .row .col {
+    width: 33.33%;
+    /* border: 2px solid goldenrod; */
+}
+
+.footer .footer-h4 {
+    font-size: clamp(18px, 4vw, 33px);
+    color: #6c9894;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.footer-ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-ul .footer-li {
+    margin: 10px 0;
+}
+
+.footer-ul .footer-li .footer-a {
+    text-decoration: none;
+    font-size: clamp(16px, 3.2vw, 25px);
+    color: #6c9894;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.footer .footer-p {
+    width: 85%;
+    margin: 20px 0;
+    font-size: clamp(16px, 3.2vw, 25px);
+    color: #6c9894;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+/* footer end */
