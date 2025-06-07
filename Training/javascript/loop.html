@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- home task -->
+    <!-- <script>
+           for (let a = 1; a <= 100; a++) {
+
+            if (let a = 1; a*15 <= 100; a++)  {
+                console.log("fizzbuzz");
+                document.write(a+"=>fizzbuzz <br>")
+            }
+            else if (let a = 1; a*5 <= 100; a++) {
+                console.log("buzz");
+                document.write(a+"=>,buzz <br>")
+            }
+            else if (let a = 1; a*3 <= 100; a++) {
+                console.log("fizz");
+                document.write(a+"=>,fizz <br>")
+            }
+            else {
+                console.log(a);
+                 document.write(a+"=>,a <br>")
+            }
+        } -->
+<!-- 
+        
+        //    for (let a = 1; a <= 100; a++) {
+
+        //     if(a*5 && a*3){
+        //         console.log("fizzbuzz");
+        //         document.write(a+"=>fizzbuzz <br>")
+        //     }
+        //     else if(a*5){
+        //         console.log("buzz");
+        //         document.write(a+"=>,buzz <br>")
+        //     }
+        //     else if(a*3){
+        //         console.log("fizz");
+        //         document.write(a+"=>,fizz <br>")
+        //     }
+        //     else{
+        //         console.log(a);
+        //          document.write(a+"=>,a <br>")
+        //     }
+        // } -->
+        
+
+        <script>
+    let fizz = 3;
+    let buzz = 5;
+    let fizzbuzz = 15;
+
+    for (let a = 1; a <= 100; a++) {
+        if (a === fizzbuzz) {
+            console.log("fizzbuzz");
+            document.write(a + " => fizzbuzz <br>");
+            fizzbuzz += 15;
+            fizz += 3;
+            buzz += 5;
+        } else if (a === buzz) {
+            console.log("buzz");
+            document.write(a + " => buzz <br>");
+            buzz += 5;
+        } else if (a === fizz) {
+            console.log("fizz");
+            document.write(a + " => fizz <br>");
+            fizz += 3;
+        } else {
+            console.log(a);
+            document.write(a + " => " + a + "<br>");
+        }
+    }
+</script>
+
+
+        
+    
+</body>
+</html>

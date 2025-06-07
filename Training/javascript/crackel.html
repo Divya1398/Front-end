@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let crackle = 4;
+        let pop = 7;
+        let cracklepop = 28;
+        for (a = 1; a <= 50; a++) {
+            if (a === cracklepop) {
+                console.log("cracklepop")
+                document.write(a + "=> cracklepop <br>")
+                cracklepop += 28;
+                crackle += 4;
+                pop += 7;
+            }
+            else if (a === crackle) {
+                console.log("crackle")
+                document.write(a + "=> crackle <br>")
+                crackle += 4;
+            }
+            else if (a === pop) {
+                console.log("pop")
+                document.write(a + "=> pop <br>")
+                pop += 7;
+            }
+            else {
+                console.log("a")
+                document.write(a + "=>" + a + "<br>")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

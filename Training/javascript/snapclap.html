@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let SnapClap = 20;
+        let Snap = 4;
+        let Clap = 10;
+        for (let a = 1; a <= 40; a++) {
+            if (a === SnapClap) {
+                console.log("SnapClap")
+                document.write(a + "=> SnapClap <br>")
+                SnapClap += 20;
+                Snap += 4;
+                Clap += 10;
+            }
+            else if (a === Snap) {
+                console.log("Snap")
+                document.write(a + "=> Snap <br>")
+                Snap += 4;
+            }
+            else if (a === Clap) {
+                console.log("Clap")
+                document.write(a + "=> Clap <br>")
+                Clap += 10;
+            }
+            else{
+                console.log(a)
+                document.write(a+ "=>"+ a + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>

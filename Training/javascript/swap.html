@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+</head>
+
+<body>
+    <!-- <button onclick="swap()">swap</button> -->
+    <script>
+        // home task
+        var a = 2;
+        var b = 3;
+        console.log(a)
+        console.log(b)
+        document.write("<br>", "a=>", a, "<br>", "b=>", b)
+        function swap() {
+            var temp = b;
+            b = a;
+            a = temp;
+        }
+
+        swap();
+        document.write(a, b)   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your data" id="inp" onkeyup="test()">
+    <textarea name="" id="text" rows="10" cols="30"></textarea>
+    <button onclick="">Add data</button>
+
+    <script>
+        let inp_tag = document.getElementById("inp")
+        let text_tag = document.getElementById("text")
+
+        function test() {
+            text_tag.innerText = inp_tag.value
+        }
+    </script>
+</body>
+
+</html>

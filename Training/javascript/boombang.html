@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       for (a = 1; a <= 30; a++) {
+            if (a % 2 === 0 && a % 5 === 0) {
+                console.log("BoomBang")
+                document.write(a + "=> BoomBang <br>")
+              
+            }
+            else if (a % 2 === 0) {
+                console.log("Boom")
+                document.write(a + "=>Boom <br>")
+            
+            }
+            else if (a % 5 === 0) {
+                console.log("Bang")
+                document.write(a + "=>Bang <br>")
+                
+            }
+            else {
+                console.log(a)
+                document.write(a + "=>" + a + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>

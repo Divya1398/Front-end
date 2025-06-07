@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop example home practice</title>
+</head>
+
+<body>
+    <script>
+        let meow = 4;
+        let woof = 6;
+        let meowWoof = 12;
+        for (a = 1; a <= 50; a++) {
+            if (a === meowWoof) {
+                console.log("meowWoof")
+                document.write(a + " => meowWoof <br>");
+                meowWoof += 12;
+                meow += 4;
+                woof += 6;
+            }
+            else if (a === meow) {
+                console.log("meow")
+                document.write(a + " => meow <br>");
+                meow += 4;
+            }
+            else if (a === woof) {
+                console.log("woof")
+                document.write(a + " => woof <br>");
+                woof += 6;
+            }
+            else {
+                console.log(a)
+                document.write(a + " => " + a + "<br>");
+                
+
+
+                // document.write(a + " => a <br>");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
