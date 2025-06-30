@@ -1,0 +1,386 @@
+@media only screen and (max-width:1160px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {
+
+    /* title start */
+    .navlist {
+        display: none;
+    }
+
+    .nav-b {
+        display: block;
+    }
+
+    /* title end */
+    /* header  start */
+    .card-content {
+        color: #f4f9f4;
+
+    }
+
+    .card-content .card-content-p {
+        width: 160%;
+    }
+
+    .card .row {
+
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .col .col-img {
+
+        margin-left: 5%;
+        padding-left: 7%;
+    }
+
+    .col1 .col-h1 {
+        width: 70%;
+    }
+
+    .col1 .col-p {
+        width: 100%;
+    }
+
+    .col1 .col-btn {
+        width: 50%;
+    }
+
+    /* header end */
+    /* section-1 start */
+    .card-data .row .col {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+    }
+
+    .card-data .row .col::after {
+        content: url(/image/Design1.png);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        display: none;
+    }
+
+    .card-data .row .col {
+        width: 50%;
+        /* border: 2px solid; */
+        margin-right: 100px;
+    }
+
+    .card-data .row {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card .card-img {
+
+        margin: 20px auto;
+        margin-left: 0px;
+        padding-left: 0;
+        width: 50%;
+    }
+
+    .card-content .card-content-h4 {
+
+        color: #f4f9f4;
+        width: 100%;
+    }
+
+    .card-content .card-content-p {
+        color: #f4f9f4;
+        width: 100%;
+    }
+
+    /* section-1 end */
+    /* section-2 start */
+    #sec-2 {
+        background: url(/image/Background-2.png);
+        background-size: 100% 100%;
+        padding: 20px;
+    }
+
+    .sec-2-p {
+        width: 66%;
+    }
+
+    .card-content {
+        color: #6c9894;
+        margin-top: 0;
+    }
+
+    .card-content .card-p {
+        width: 150%;
+        padding-right: 42px;
+    }
+
+    .card-img .circle {
+        margin: 0 auto;
+        /* margin-left: 100px; */
+    }
+
+    .circle {
+        margin-left: 0px;
+        padding-left: 0px;
+        margin: 10px 0;
+        width: 220px;
+        height: 220px;
+        border-radius: 155px;
+        /* background-color: #6c9894; */
+        border: 5px solid #6c9894;
+    }
+
+    /* section-2 end */
+    /* section-3 start */
+    .card-main .row {
+        flex-direction: column;
+    }
+
+    .card-main .row .col1 {
+        width: 100%;
+        justify-items: start;
+        align-items: start;
+    }
+
+    .card .card-img {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .card .card-p1 {
+        width: 100%;
+    }
+
+    /* section-3 end */
+    /* section-4 start */
+    .card-main1 .row {
+        flex-direction: column;
+    }
+
+    .card-main1 .row .col1 {
+        width: 100%;
+        justify-items: start;
+        align-items: start;
+    }
+
+    .card1 .card-img {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .card1 .card-p2 {
+        width: 100%;
+    }
+
+    .card1 {
+        margin: 0 auto;
+    }
+
+    .card-main1 .row .col2 {
+        width: 70%;
+    }
+
+    .card1 .card-p2 {
+        margin-left: 0;
+        padding-left: 0;
+        width: 85%;
+        text-align: left;
+    }
+
+    /* section-4 end */
+    /* section-5 start */
+    .card-data1 .row1 {
+        flex-direction: column;
+    }
+
+    .card-data1 .row1 .col1 {
+        width: 70%;
+    }
+
+    .card1 .card1-p {
+        width: 30%;
+        padding: 10px 0;
+    }
+
+    .header-main .header-p {
+        width: 100%;
+    }
+
+    /* section-5 end */
+    /* section-6 start */
+    .main {
+        width: 80%;
+    }
+
+    .main .img7 {
+        width: 95%;
+        margin-right: 100px;
+        padding-left: 100px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    /* section-6 end */
+
+    /* section-7 start */
+    .main-h2 {
+        width: 100%;
+    }
+
+    .main-p {
+        margin-top: 10px;
+        width: 75%;
+    }
+
+    .subscribe-box {
+        margin: 10px auto;
+        margin-left: 150px;
+    }
+
+    .subscribe-box input,
+    button {
+        margin: 0 auto;
+        width: 100%;
+        margin: 5px 0;
+
+    }
+
+    /* section-7 end */
+    /* footer start */
+    #footer .row {
+        display: block;
+    }
+
+    #footer .row .col-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer .row .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .row .col {
+        width: 100%;
+
+    }
+
+    .footer .footer-p {
+        width: 100%;
+    }
+
+    /* footer end */
+}
+
+@media only screen and (max-width:576px) {
+
+    .circle {
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    }
+    .card-img .circle{
+        margin: 0 auto;
+       margin-left: 40px;
+       
+    }
+    #sec-2 {
+        
+        overflow: hidden;
+        width: 130%;
+    }
+    #sec-1{
+        width: 120%;
+    }
+    .sec-main{
+        width: 80%;
+        text-align: center;
+    }
+    .sec-2-h1 {
+        padding-right: 100px;
+        text-align: center;
+    }
+    .sec-2-p{
+        padding-right: 100px;
+        width: 100%;
+    }
+    .card-data{
+        width: 100%;
+    }
+    #title{
+        width: 100%;
+        padding-right: 120px;
+    }
+    .col1{
+        width: 150%;
+        margin: 0 auto;
+      
+        /* padding-left: 80px; */
+    }
+    .col1 .col-h1{
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 55px;
+    }
+    .col1 .col-p {
+        width: 200%;
+        margin: 0 auto;
+       
+    }
+    .col1 .col-btn{
+        width: 100%;
+        margin: 10px auto;
+        margin-left: 55px;
+    }
+    .card1 .card1-btn{
+        width: 70%;
+    }
+    .main .img7{
+        width: 100%;
+        /* padding-right: 170px; */
+        padding: 2px 2px;
+    }
+    .subscribe-box{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card1 .btn1 {
+        width: 100%;
+        padding: 5px 5px;
+        margin: 0;
+    }
+    .card .btn {
+        width: 150%;
+        padding: 5px 5px;
+        margin: 0;
+    }
+   
+   
+    /* .card-content-h4{
+        width: 100%;
+        text-align: center;
+        padding-right: 80px;
+    }
+    .card-content-p{
+        width: 100%;
+        text-align: center;
+    }  */
+
+}
