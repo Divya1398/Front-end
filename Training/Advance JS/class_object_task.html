@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+</head>
+
+<body>
+    <script>
+        // Define a Bank class
+        class Bank {
+
+            // Method inside class to setup bank account
+            bankdetail = function bankdetail(pin, balance) {
+                //  These are private variables, stored using 'let'
+                let bankname = "HDFC";
+                let bankIFSC = "HDF12358";
+                let bankblance = balance;
+                let bankpin = pin
+
+                // function 1: Show bank details
+                let showDetails = function () {
+                    console.log("Bank name =>", bankname);
+                    console.log("Bank IFSC=>", bankIFSC);
+                    console.log("Bank pin=>", bankpin);
+                    console.log("Bank Balance=>", bankblance);
+                }
+
+                // Function 2: Deposit money
+                let deposit = function deposit(amount) {
+                    if (amount > 0) {
+                        bankblance += amount;
+                        console.log("rupee" + amount + "deposited.");
+                        console.log("new Balance:" + bankblance);
+                    }
+                    else {
+                        console.log("Invalid amount");
+                    }
+
+                }
+
+                // Function 3: Withdraw money
+                let withdraw = function withdraw(amount) {
+                    if (amount <= 0) {
+                        console.log("invalid Amoount");
+                    }
+                    else if (amount > bankblance) {
+                        console.log("insufficient balance");
+
+                    }
+                    else {
+                        bankblance -= amount;
+                        console.log("rupee" + amount + "withdrawn successfully.");
+                        console.log("remaining balance:" + bankblance);
+
+                    }
+                }
+
+                // Function 4: Check balance
+                let checkBalance = function checkBalance() {
+                    console.log("Current Balance: ₹" + bankblance);
+                };
+
+                // Return all functions as an object
+                return {
+                    bankdetail,
+                    deposit,
+                    withdraw,
+                    checkBalance
+
+                }
+            }
+        }
+
+        
+        //  Step 1: Create a Bank object
+        let bank = new Bank();
+        // Step 2: Setup bank account and get returned methods (closure object)
+        let user = bank.bankdetail(1234, 20000);
+
+
+        //  Step 3: Use functions from the returned object
+        user.bankdetail();     // Show account details
+        user.deposit(1000);    // Deposit ₹1000
+        user.withdraw(500);    // Withdraw ₹500
+        user.checkBalance();   // Show current balance
+
+    </script>
+</body>
+
+</html>

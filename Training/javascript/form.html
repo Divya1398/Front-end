@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+    <style>
+        span {
+            color: red;
+        }
+        .button {
+            padding: 10px 10px;
+            background-color: rgb(3, 71, 3);
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" align="center" onsubmit="return check()"><br><br>
+        <input type="text" placeholder="First Name" id="Fname">
+        <span id="nmerr"></span>
+        <br><br>
+        <input type="text" placeholder="Last Name" id="Lname">
+        <span id="lmerr"></span>
+        <br><br>
+        <input type="tel" placeholder="Mobile Number" id="Mnbr">
+        <span id="merr"></span>
+        <br><br>
+        <input type="email" placeholder="Email" id="Emal">
+        <span id="enmerr"></span>
+        <br><br>
+        <input type="password" placeholder="Password" id="Pwrd">
+        <span id="pnmerr"></span>
+        <br><br>
+        <input type="password" placeholder="Confirm Password" id="Cwrd">
+        <span id="cnmerr"></span>
+        <br><br>
+        <button type="submit" value="Submit" class="button">Submit</button>
+    </form>
+
+    <script>
+        function check() {
+            let valid = true;
+
+            let Fname = document.getElementById("Fname").value.trim()
+            let Lname = document.getElementById("Lname").value.trim()
+            let Mnbr = document.getElementById("Mnbr").value.trim()
+            let Emal = document.getElementById("Emal").value.trim()
+            let Pwrd = document.getElementById("Pwrd").value.trim()
+            let Cwrd = document.getElementById("Cwrd").value.trim()
+
+
+            let reg_ex = /^[a-zA-Z]+$/
+            let mo_ex = /^[0-9]{10}$/
+            let reg_ex_pass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,12}$/
+            let eml_ex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+            if (Fname == "" || Fname == null) {
+                document.getElementById("nmerr").innerText = "Enter firstname"
+                valid = false
+                // return false;
+            }
+            else if (!reg_ex.test(Fname)) {
+                document.getElementById("nmerr").innerText = "Number not allowed"
+                valid = false
+                // return false
+            } else {
+                document.getElementById("nmerr").innerText = ""
+
+            }
+
+
+            if (Lname == "" || Lname == null) {
+                document.getElementById("lmerr").innerText = "Enter lastname"
+                valid = false
+                // return false;
+            }
+            else if (!reg_ex.test(Lname)) {
+                document.getElementById("lmerr").innerText = "Numbers Not allowed"
+                valid = false
+                // return false
+            }
+            else {
+                document.getElementById("lmerr").innerText = ""
+            }
+
+            if (Mnbr == "" || Mnbr == null) {
+                document.getElementById("merr").innerText = "Enter mobile number"
+                valid = false
+                // return false;
+            }
+            else if (!mo_ex.test(Mnbr)) {
+                document.getElementById("merr").innerText = "Only numbers are allowed"
+                valid = false
+                // return false
+            }
+            else {
+                document.getElementById("merr").innerText = ""
+            }
+
+            if (Emal == "" || Emal == null) {
+                document.getElementById("enmerr").innerText = "Enter email"
+                valid = false
+                // return false;
+            }
+            else if (!eml_ex.test(Emal)) {
+                document.getElementById("enmerr").innerText = "Enter Valid Email"
+                valid = false
+                // return false;
+            }
+            else {
+                document.getElementById("enmerr").innerText = ""
+            }
+
+            if (Pwrd == "" || Pwrd == null) {
+                document.getElementById("pnmerr").innerText = "Enter password"
+                valid = false
+                // return false;
+            }
+            else if (!reg_ex_pass.test(Pwrd)) {
+                document.getElementById("pnmerr").innerText = "8-12 chars, include uppercase, lowercase, number, and special symbol"
+                valid = false
+                // return false;
+            }
+            else {
+                document.getElementById("pnmerr").innerText = ""
+            }
+
+            if (Cwrd == "" || Cwrd == null) {
+                document.getElementById("cnmerr").innerText = "Enter confirm password"
+                valid = false
+                // return false;
+            }
+            else if (Pwrd != Cwrd) {
+                document.getElementById("cnmerr").innerText = "Password and Confirm Password do not match"
+                valid = false
+                // return false
+            }
+            else {
+                // document.getElementById("nmerr").innerText = ""
+                // document.getElementById("lmerr").innerText = ""
+                // document.getElementById("merr").innerText = ""
+                // document.getElementById("enmerr").innerText = ""
+                // document.getElementById("pnmerr").innerText = ""
+                document.getElementById("cnmerr").innerText = ""
+            
+            }
+            if(valid){
+                alert("form Submitted successfully!");
+            }
+            return valid
+        }
+
+    </script>
+</body>
+
+</html>

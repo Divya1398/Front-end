@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider</title>
+  <style>
+    .main {
+      height: 400px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: linear-gradient(red, green);
+      color: white;
+      font-size: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <img src="/img/Images.png" class="img" alt="Image 1" />
+    <img src="/img/img-2.png" class="img" alt="Image 2" />
+    <img src="/img/img-1.png" class="img" alt="Image 3" />
+    <img src="/img/img-3.png" class="img" alt="Image 4" />
+  </div>
+
+  <button onclick="prev()">Previous</button>
+  <button onclick="next()">Next</button>
+
+  <script>
+    let img_tag = document.getElementsByClassName("img");
+    let index = 0;
+
+    function showImage(i) {
+      for (let j = 0; j < img_tag.length; j++) {
+        img_tag[j].style.display = "none";
+      }
+      img_tag[i].style.display = "block";
+    }
+
+    // function next() {
+    //   index = (index + 1) % img_tag.length;
+    //   showImage(index);
+    // }
+
+    function prev() {
+      index = (index - 1 + img_tag.length) % img_tag.length;
+      showImage(index);
+    }
+
+    function autoSlider() {
+      prev(); // move to next image
+      setTimeout(autoSlider, 2000); // auto change every 2s
+    }
+
+    showImage(index); // Show first image
+    autoSlider(); // Start slider
+  </script>
+</body>
+
+</html>
