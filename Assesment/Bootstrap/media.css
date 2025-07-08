@@ -1,0 +1,60 @@
+/* Responsive Tweaks for small devices (up to 576px) */
+@media (max-width: 576px) {
+    .header {
+        padding: 25px 10px;
+        /* Less padding on smaller screens */
+    }
+
+    .header .h1 {
+        font-size: 24px;
+        /* Smaller heading size */
+    }
+
+    .form-control,
+    .btn {
+        /* Readable text on mobile */
+        font-size: 16px;
+        /* Adjusted button/input padding */
+        padding: 10px 12px;
+        /* Good tap target for mobile */
+        min-height: 45px;
+    }
+}
+
+/* Additional layout changes for extra-small screens (up to 480px) */
+@media (max-width: 480px) {
+    .search-container {
+        /* Stack input and button vertically */
+        flex-direction: column;
+        /* Shrink container width */
+        max-width: 90%;
+    }
+
+    .search-container input[type="search"],
+    .search-container button {
+        border-radius: 4px;
+        /* Rounded edges for mobile style */
+        width: 100%;
+        /* Full-width elements */
+        box-sizing: border-box;
+        /* Include padding inside width */
+    }
+
+    .search-container button {
+        /* Space between input and button */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* About Section  */
+    .hdr-img {
+        padding: 20px 0;
+    }
+
+    .p-3 {
+        padding: 1rem 0;
+        /* Reduce side padding on small devices */
+    }
+}
+

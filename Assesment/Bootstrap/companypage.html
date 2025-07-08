@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/Bootstrap/company.css">
+    <link rel="stylesheet" href="/Bootstrap/media.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30"
+                    height="24">
+            </a>
+            <!-- Toggle button for mobile navbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!--  Header Section with Title and Search Bar -->
+    <div class="header">
+        <div class="h1">Company</div>
+        <p>We Specialize in Product</p>
+
+        <!-- Search + Subscribe button (in one line) -->
+        <div class="search-container">
+            <input type="search" placeholder="Search here..." />
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+    <!-- header section complete -->
+    <!--  About Section Header Start -->
+    <div class="header-1">
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col-12 col-md-6"> <!-- full width on mobile, half width on md+ -->
+                    <!-- Left Column: About Text -->
+                    <div class="col">
+                        <div class="p-3">
+                            <h1>About Company Page</h1>
+                            <p class="fs-5">At Mankind, we believe that we are participating in the accelerated change
+                                in the heart of
+                                India through our core values of Affordability, Quality and Accessibility backed by our
+                                strong in-house manufacturing and R&D capabilities.
+                            </p>
+                            <p class="fs-5">To be able to provide cost-effective, innovation based superior quality
+                                pharmaceutical
+                                products that improve the lives of the patients.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Image -->
+                <div class="col-12 col-md-6"> <!-- full width on mobile, half width on md+ -->
+                    <div class="p-3">
+                        <div class="hdr-img"><img src="/Bootstrap/img/bar.jpg" alt="No image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- responsive button -->
+    <div class="col-12 order-3 order-md-3 p-3 d-md-none">
+        <!-- Button only visible on small screens below image -->
+        <button class="btn btn-secondary w-100" type="button">Get in Touch</button>
+    </div>
+    <div class="col-md-6 d-none d-md-flex align-items-start p-3">
+        <!-- Button only visible on desktop, below text -->
+        <button class="btn btn-secondary mt-3" type="button">Get in Touch</button>
+    </div>
+    </div>
+    <!-- About Section Header End -->
+    <!-- service section start-->
+    <div class="service">
+        <h3>Services</h3>
+        <h5>What we offer</h5>
+    </div>
+    <!-- image section -->
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+            <div class="col">
+                <div class="p-3"><img src="/Bootstrap/img/power.png" alt="">
+                    <p class="fs-5">Power</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3"><img src="/Bootstrap/img/love.png" alt="">
+                    <p class="fs-5">Love</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3"><img src="/Bootstrap/img/done.jpg" alt="">
+                    <p class="fs-5">Job Done</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service section end-->
+    <!-- another service section start-->
+    <div class="section bg-secondary-subtle">
+        <div class="service">
+            <h3>Services</h3>
+            <h5>What we offer</h5>
+        </div>
+        <!-- image section -->
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+                <div class="col">
+                    <div class="p-3"><img src="/Bootstrap/img/power.png" alt="">
+                        <p class="fs-5">Power</p>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><img src="/Bootstrap/img/love.png" alt="">
+                        <p class="fs-5">Love</p>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><img src="/Bootstrap/img/done.jpg" alt="">
+                        <p class="fs-5">Job Done</p>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- image section-2 -->
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+                <div class="col">
+                    <div class="p-3"><img src="/Bootstrap/img/lef.jpg" alt="">
+                        <p class="fs-5">Gren</p>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><img src="/Bootstrap/img/certified.jpg" alt="">
+                        <p class="fs-5">certified</p>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><img src="/Bootstrap/img/service.jpg" alt="">
+                        <p class="fs-5">Hard Work</p>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  another service section end-->
+    <!-- card start -->
+    <div class="section bg-light">
+        <div class="Portfolio">
+            <h3>PORTFOLIO</h3>
+            <h5>What we have operated</h5>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/Bootstrap/img/card-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/Bootstrap/img/card-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/Bootstrap/img/card-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card end -->
+    <!-- slider start -->
+    <div class="container mt-3 mb-3">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Bootstrap/img/slide-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/img/slide-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/img/slide-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- slider end -->
+    <!-- section-3 start -->
+    <section id="sec-3">
+        <div class="container">
+            <div class="header-main">
+                <h1 class="header-h1">Pricing</h1>
+                <p class="header-p">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus lacinia odio vitae
+                    vestibulum vestibulum. </p>
+            </div>
+            <div class="card-data1">
+                <div class="row1">
+                    <div class="col1">
+                        <div class="card1">
+                            <h3 class="card1-h3">Basic</h3>
+                            <div class="card1-img"><img src="/image/Icon (1).png" alt=""></div>
+                            <div class="card1-price">$19.00</div>
+                            <p class=".card1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card1-btn">Order Now</div>
+                        </div>
+                    </div>
+                    <div class="col1">
+                        <div class="card1">
+                            <h3 class="card1-h3">Pro</h3>
+                            <div class="card1-img"><img src="/image/Icon (1).png" alt=""></div>
+                            <div class="card1-price">$19.00</div>
+                            <p class=".card1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card1-btn">Order Now</div>
+                        </div>
+                    </div>
+                    <div class="col1">
+                        <div class="card1">
+                            <h3 class="card1-h3">Premium</h3>
+                            <div class="card1-img"><img src="/image/Icon (1).png" alt=""></div>
+                            <div class="card1-price">$19.00</div>
+                            <p class=".card1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card1-btn">Order Now</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-3 end -->
+     <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Left Column: Company Info -->
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Contact Information</h4>
+                    <p><strong>Address:</strong> 123 Business St, Rajkot, Gujarat</p>
+                    <p><strong>Email:</strong> info@company.com</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+
+                    <!-- Embedded Google Map -->
+                    <div class="map-responsive mt-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4718437765227!2d72.64308887436823!3d23.043156815561584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8797c317d973%3A0x85e8804194fdd240!2sShiv%20Apartment!5e0!3m2!1sen!2sin!4v1752007633422!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-md-6">
+                    <h4 class="mb-3">Send Us a Message</h4>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Done</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+<!-- footer end -->
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/*  Header Styling */
+.header {
+    display: flex;
+    /* Arrange child elements in a column */
+    flex-direction: column;
+    align-items: center;
+    /* Horizontally center elements */
+    text-align: center;
+    /* Center text inside */
+    background-color: orangered;
+    /* Bright orange background */
+    color: white;
+    /* White text color */
+    padding: 40px 15px;
+    /* Space inside the header */
+    width: 100%;
+    /* Full-width section */
+}
+
+.header .h1 {
+    font-size: clamp(26px, 6vw, 48px);
+    /* Responsive font size (min 26px, max 48px) */
+    font-weight: bold;
+    /* Bold heading */
+    margin-bottom: 10px;
+    /* Space below heading */
+}
+
+.header form {
+    width: 100%;
+    /* Full width of container */
+    max-width: 500px;
+    /* But no wider than 500px */
+    margin-top: 20px;
+    /* Space above form */
+}
+
+.form-control,
+.btn {
+    width: 100%;
+    /* Input and button take full width */
+}
+/* About Section Image Container */
+.hdr-img{
+    padding: 40px 20px;
+}
+.hdr-img img {
+    width: 100%;          /* Make image responsive */
+    height: auto;         /* Keep original aspect ratio */
+    object-fit: cover;    /* Ensure it fills space cleanly */
+    border-radius: 8px;   /* Rounded corners (optional) */
+}
+/* About section complete */
+/* service section start */
+.service {
+  margin-bottom: 30px; /* space below headings and above grid */
+}
+.service h3, 
+.service h5 {
+    text-align: center;
+    margin: 10px auto;
+}
+/* service section end */
+/* card start */
+.Portfolio {
+  margin-bottom: 30px; /* space below headings and above grid */
+}
+.Portfolio h3, 
+.Portfolio h5 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* card end */
+/* section-3 start */
+
+#sec-3 {
+    background-color: #5380c1;
+}
+
+.card-data1 .row1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.card-data1 .row1 .col1 {
+    width: 33.33%;
+    background-color: orangered;
+    padding: 10px 0;
+}
+
+.card1 {
+    text-align: center;
+    color: #f1eeec;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.card1 .card1-h3,
+.card1-price {
+    font-size: clamp(18px, 4vw, 37px);
+    font-weight: 700;
+    font-family: "Poppins";
+    margin: 10px auto;
+}
+
+.card1 .card1-p {
+    font-size: clamp(16px, 2.1vw, 22px);
+    font-weight: 400;
+    font-family: "Poppins";
+    margin: 20px auto;
+}
+
+.card1 .card1-btn {
+    font-size: clamp(16px, 2.3vw, 25px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 32px;
+    background-color: #edc315;
+    cursor: pointer;
+}
+
+/* section-3 end */
+/* footer */
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
