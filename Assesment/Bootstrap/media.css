@@ -27,7 +27,7 @@
         /* Stack input and button vertically */
         flex-direction: column;
         /* Shrink container width */
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .search-container input[type="search"],
@@ -47,6 +47,7 @@
 }
 
 @media (max-width: 767px) {
+
     /* About Section  */
     .hdr-img {
         padding: 20px 0;
@@ -58,3 +59,34 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    /* section-3 start */
+    .card-data1 .row1 {
+        display: block;
+        text-align: center;
+    }
+
+    .card-data1 .row1 .col1 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .card1,
+    .card1-btn {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card1-btn {
+        width: 80%;
+        /* Or use max-width instead */
+        max-width: 250px;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    /* section-3 end */
+}

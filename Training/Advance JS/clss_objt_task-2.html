@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card App</title>
+</head>
+
+<body>
+    <script>
+        // define class
+        class report {
+            studentdetail = function studentdetail(id, Marks) {
+                let studentname = "Divya";
+                let studentid = id;
+                let studentmarks = Marks;
+
+                // function 1
+                let detail = function detail() {
+                    console.log("Student Name:=>", studentname);
+                    console.log("Student ID:=>", studentid);
+                    console.log("Student Mark:=>", studentmarks)
+                }
+                // function-2 update marks
+                let updatemarks = function updatemarks(newMarks) {
+                    if (newMarks > 0) {
+                        studentmarks += newMarks
+                        console.log(newMarks + "updated")
+                    }
+                    else {
+                        console.log("invalid")
+                    }
+                }
+                // function-3 get grade
+                let getgrade = function getgrade(){
+                if (studentmarks >= 90) {
+                    console.log("Grade: A+");
+                } else if (studentmarks >= 75) {
+                    console.log("Grade: A");
+                } else if (studentmarks >= 60) {
+                    console.log("Grade: B");
+                } else if (studentmarks >= 40) {
+                    console.log("Grade: C");
+                } else {
+                    console.log("Fail ");
+                }
+            }
+            // function-4 pass or fail
+            let ispass = function ispass(){
+                if(studentmarks>=40){
+                    console.log("PASS")
+                }
+                else{
+                    console.log("FAIL")
+                }
+            }
+                return {
+                    detail,
+                    updatemarks,
+                    getgrade,
+                    ispass
+                }
+            }
+        }
+        let student = new report()
+        let s1 = student.studentdetail("DC12", 80)
+        s1.detail()
+        s1.updatemarks(20)  //added maks ...80+20=100 grade are according to this
+        s1.getgrade()
+        s1.ispass() //pass or fail
+    </script>
+</body>
+
+</html>

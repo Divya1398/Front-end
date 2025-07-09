@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
 /*  Header Styling */
 .header {
     display: flex;
@@ -45,7 +54,7 @@
     padding: 40px 20px;
 }
 .hdr-img img {
-    width: 100%;          /* Make image responsive */
+     width: 100%;          /* Make image responsive */
     height: auto;         /* Keep original aspect ratio */
     object-fit: cover;    /* Ensure it fills space cleanly */
     border-radius: 8px;   /* Rounded corners (optional) */
@@ -96,8 +105,15 @@
     color: #f1eeec;
     padding: 40px 20px;
     border-radius: 10px;
+   border: 3px double white;
 }
-
+.card1:hover {
+    border-color: #edc315; /* highlight border */
+    background-color: #ffffff; /* flip background */
+    color: #000000; /* dark text */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* deeper shadow */
+    transform: translateY(-5px); /* lift effect */
+}
 .card1 .card1-h3,
 .card1-price {
     font-size: clamp(18px, 4vw, 37px);
@@ -124,7 +140,14 @@
     background-color: #edc315;
     cursor: pointer;
 }
-
+.card1-btn {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
 /* section-3 end */
 /* footer */
 .map-responsive {

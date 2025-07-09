@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <script>
+        class Cart {
+            cartdetail = function cartdetail(itemName, price) {
+                let Cartitems = ["pen", "pencil", "chalk", "marker"];
+                let itemPrices = {
+                    pen: 10,
+                    pencil: 5,
+                    chalk: 3,
+                    marker: 15,
+                    eraser: 5
+                };
+
+                let addItem = function addItem(newitem) {
+                    if (Cartitems.push(newitem)) {
+                        console.log(newitem + "added to cart")
+                    } else {
+                        console.log(NoAdd)
+                    }
+                }
+                
+                let showCart = function () {
+                    console.log("Cart Items and Prices:");
+                    Cartitems.forEach(item => {
+                        console.log(item + ": ₹" + itemPrices[item]);
+                    });
+                };
+               
+                let RemoveItem = function RemoveItem(removeitem) {
+                    if (Cartitems.pop(removeitem)) {
+                        console.log(removeitem + " Remove to cart")
+                    } else {
+                        console.log(NoRemove)
+                    }
+                }
+
+
+
+
+                return {
+                    cartdetail,
+                    addItem,
+                    showCart,
+                    RemoveItem
+                }
+
+
+            }
+
+        }
+        let cart = new Cart()
+        let u1 = cart.cartdetail()
+        u1.addItem("eraser")
+        u1.showCart()
+        u1.RemoveItem()
+    </script>
+</body>
+
+</html>

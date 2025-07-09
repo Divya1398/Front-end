@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Reveal Demo</title>
+  <!-- just for practice in chatgpt -->
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+    }
+
+    .section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .box {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: all 0.6s ease-out;
+    }
+
+    .box.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <div class="box content">👋 Welcome to My Page</div>
+  </div>
+
+  <div class="section">
+    <div class="box content">✨ This Text Will Reveal on Scroll</div>
+  </div>
+
+  <div class="section">
+    <div class="box content">🚀 Scroll Animations are Cool!</div>
+  </div>
+
+  <div class="section">
+    <div class="box content">✅ Easy with HTML, CSS, and JS</div>
+  </div>
+
+  <script>
+    window.addEventListener("scroll", revealOnScroll);
+
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll(".box");
+
+      reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+          el.classList.add("reveal");
+        }
+      });
+    }
+
+    // Also call once on load
+    revealOnScroll();
+  </script>
+</body>
+</html>
