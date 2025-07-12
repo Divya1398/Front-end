@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fetch("data2.json", {
+            method: "GET"
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                // document.writeln("data")
+                data.products.forEach((value, index) => {
+                    document.writeln(`<h4>
+                    ID : ${value.id}<br>
+                    NAME :${value.name}<br>
+                    BRAND :${value.brand}<br>
+                    PRICE :${value.price}<br>
+                    </h4><hr>`)
+                });
+
+                document.writeln("<h2>Suppliers detail</h2>")
+                data.suppliers.forEach((value, index) => {
+                    document.writeln(`<h4>
+                    ID : ${value.id}<br>
+                    NAME :${value.name}<br>
+                    LOCATION :${value.location}<br>
+                    </h4><hr>`)
+                });
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+
+    </script>
+</body>
+
+</html>

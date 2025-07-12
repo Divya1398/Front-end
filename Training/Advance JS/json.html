@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json object fetch</title>
+</head>
+
+<body>
+    <script>
+        fetch("data1.json", {
+            method: "GET"
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                data.user.forEach((value, index) => {
+                    document.writeln(`<h4> ID : ${value.id} <br> 
+                        NAME : ${value.name} <br> 
+                        course : ${value.course} <br> 
+                        age : ${value.age} <br>
+                        </h4><hr>`)
+                });
+                document.writeln("<h2>admin details</h2>")
+                data.admin.forEach((value, index) => {
+                    document.writeln(`<h4> ID : ${value.id} <br> 
+                        NAME : ${value.name} <br> 
+                        department : ${value.department}  <br>
+                        </h4><hr>`)
+                })
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+    </script>
+</body>
+
+</html>
