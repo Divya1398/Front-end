@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+    <script>
+        fetch("https://dummyjson.com/recipes", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                console.log(data)
+                for (let recipe of data.recipes) {
+                    console.log(recipe)
+
+                    let htmldata = `
+                    <div class="card" style="width: 18rem;">
+  <img src="${recipe.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${recipe.name}</h5>
+                                    <p class="card-text"><strong>Cook Time:</strong> ${recipe.cookTimeMinutes} mins</p>
+                                    <p class="card-text"><strong>Ingredients:</strong> ${recipe.ingredients.slice(0,20)}..</p>
+                                    <a href="#" class="btn btn-success">View Recipe</a>
+  </div>
+</div>
+                    `
+                    document.querySelector(".row").innerHTML += htmldata;
+
+
+
+                }
+
+            })
+    </script>
+</body>
+
+</html>

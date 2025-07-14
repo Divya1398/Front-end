@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant Booking Form</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* Prevent horizontal overflow on all devices */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            max-width: 100vw;
+            box-sizing: border-box;
+        }
+
+        /* Make sure all elements include padding/border in width */
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        /* Inputs and selects should never overflow container */
+        input,
+        select,
+        button {
+            max-width: 100%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Body styles for font, background, and layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f7f9fc, #e3edff);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            /* Center form horizontally */
+            align-items: flex-start;
+            /* Align form to top */
+            min-height: 100vh;
+            /* Full viewport height */
+        }
+
+        /* Main form container styles */
+        #bookingForm {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            /* Limit form width */
+            box-sizing: border-box;
+        }
+
+        /* Form heading styling */
+        .form-heading {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 26px;
+        }
+
+        /* Label styling */
+        label {
+            font-weight: 600;
+            color: #34495e;
+            display: block;
+            /* Labels on their own line */
+            margin-bottom: 6px;
+        }
+
+        /* Icon styling inside labels */
+        label i {
+            margin-right: 8px;
+            color: #4a90e2;
+            min-width: 18px;
+            /* Fixed width for icon alignment */
+            text-align: center;
+            display: inline-block;
+        }
+
+        /* Inputs and selects styling */
+        input,
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            background-color: #fefefe;
+            transition: border-color 0.3s;
+        }
+
+        /* Focus styles for better UX */
+        input:focus,
+        select:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        /* Submit button styling */
+        button {
+            background-color: #4f41cc;
+            /* blue background */
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        /* Icon inside button */
+        button i {
+            margin-right: 8px;
+        }
+
+        /* Hover effect for button */
+        button:hover {
+            background-color: #218838;
+            /* Darker green */
+        }
+
+        /* Container for each input group */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 600px) {
+            #bookingForm {
+                padding: 25px 15px;
+            }
+
+            .form-heading {
+                font-size: 22px;
+            }
+
+            input,
+            select {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Booking form with onsubmit handler -->
+    <form id="bookingForm"
+        onsubmit="alert('Booking submitted successfully!'); this.reset(); handleBookingChange(); return false;">
+        <!-- Form title with icon -->
+        <h2 class="form-heading">
+            <i class="fa fa-utensils"></i>Restaurant Booking Form
+        </h2>
+
+        <!-- Booking Type Select -->
+        <div class="form-group">
+            <label for="bookingType">
+                <i class="fa fa-calendar-alt"></i>Choice of Booking
+            </label>
+            <select id="bookingType" onchange="handleBookingChange()">
+                <option value="">Select Booking</option>
+                <option value="Full">Full Day Booking</option>
+                <option value="Half">Half day Booking</option>
+                <option value="Hourly">Hourly Booking</option>
+            </select>
+        </div>
+
+        <!-- Username input -->
+        <div class="form-group">
+            <label for="username">
+                <i class="fa fa-user"></i>User Name:
+            </label>
+            <input type="text" id="username" pattern="[A-Za-z ]{5,50}" placeholder="Enter Your Name" required />
+        </div>
+
+        <!-- Mobile Number input -->
+        <div class="form-group">
+            <label for="mobile">
+                <i class="fa fa-phone"></i>Mobile Number:
+            </label>
+            <input type="tel" id="mobile" pattern="[6789][0-9]{9}" placeholder="Enter Your Mobile Number" maxlength="10"
+                required />
+        </div>
+
+        <!-- Email input -->
+        <div class="form-group">
+            <label for="email">
+                <i class="fa fa-envelope"></i>Email:
+            </label>
+            <input type="email" id="email" placeholder="Enter Your Email-ID"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+        </div>
+
+        <!-- Number of persons input -->
+        <div class="form-group">
+            <label for="persons">
+                <i class="fa fa-users"></i>No of persons:
+            </label>
+            <input type="number" id="persons" min="1" placeholder="How many people?" required />
+        </div>
+
+        <!-- Conditional Date field shown based on booking choice -->
+        <div class="form-group" id="dateField" style="display: none;">
+            <label for="date">
+                <i class="fa fa-calendar-day"></i>Date:
+            </label>
+            <input type="date" id="date" />
+        </div>
+
+        <!-- Conditional Slot select field -->
+        <div class="form-group" id="slotField" style="display: none;">
+            <label for="slot">
+                <i class="fa fa-utensils"></i>Slot:
+            </label>
+            <select id="slot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        <!-- Conditional Time input field -->
+        <div class="form-group" id="timeField" style="display: none;">
+            <label for="time">
+                <i class="fa fa-clock"></i>Time:
+            </label>
+            <input type="time" id="time" />
+        </div>
+
+        <!-- Submit button with icon -->
+        <button type="submit">
+            <i class="fa fa-check"></i>Book Now
+        </button>
+    </form>
+
+    <script>
+        /**
+         * Shows or hides conditional fields based on booking type selected
+         */
+        function handleBookingChange() {
+            const type = document.getElementById('bookingType').value;
+            const dateField = document.getElementById('dateField');
+            const slotField = document.getElementById('slotField');
+            const timeField = document.getElementById('timeField');
+
+            // Initially hide all conditional fields
+            dateField.style.display = 'none';
+            slotField.style.display = 'none';
+            timeField.style.display = 'none';
+
+            // Show fields based on booking type
+            if (type === 'Full') {
+                dateField.style.display = 'block';
+            } else if (type === 'Half') {
+                dateField.style.display = 'block';
+                slotField.style.display = 'block';
+            } else if (type === 'Hourly') {
+                dateField.style.display = 'block';
+                timeField.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+    <script>
+        fetch("https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLhVJ5POOc8PPXQPbfJkOGGaGUdWKrUR0cozODnYj_lmoY6Lm0wtY0zbdPvspHz4BurLP7aLXky7rP0a4LVZDmq0NzyK1GQPPT4jokuFwN-eBbHlELqfwJweLMUWSKpyy5ld1ziKLP1qx9be619UCUQjG4CT-_n_BIQUWn6Gp-9JoC7jXSNDj3GrqgGhvk_VWOAtht0BO84L92E9EQxVggmJ1pSjfFsQiyT18VJNtKZCwSXCSUDCM86qmU1AHKN2Y0mX3acWeRPyNnVWMLhLygE_P_ZRDbtMcqDpocaM&lib=ML1G0Xk_A6ATAkXyxiSt2BoNUVsYovjAZ", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                console.log(data)
+                for (let item of data) {
+                    console.log(item)
+
+                    let htmldata = `
+                    <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                    <div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+        <h5 class="card-title"><b>User ID:</b> ${item.id}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">${item.cc}</h6>
+                  <p class="card-text"><b>Link:</b> ${item.link}</p>
+                  <p class="card-text"><b>Photographer:</b> ${item.photographer}</p>
+                  <a href="#" class="btn btn-success">View Item</a>
+                </div>
+              </div>
+            </div>
+                    `
+                    document.querySelector(".row").innerHTML += htmldata;
+
+
+
+                }
+
+            })
+    </script>
+</body>
+
+</html>

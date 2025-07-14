@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="5" cellpadding="8">
+        <thead>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+
+        let tbody = document.querySelector("tbody")
+
+        fetch("https://jsonplaceholder.typicode.com/todos", {
+            method: "GET"
+        })
+
+            .then((res) => {
+                return res.json()
+            })
+
+            .then((data)=>{
+                data.forEach((user,index) => {
+                    console.log(user)
+
+                    let trow = tbody.insertRow();
+                    let idcell = trow.insertCell(0);
+                    let titlecell = trow.insertCell(1);
+                     let completedcell = trow.insertCell(2);
+
+                     idcell.textContent = user.id;
+                     titlecell.textContent = user.title;
+                     completedcell.textContent = user.completed;
+                });
+            })
+
+
+
+    </script>
+</body>
+
+</html>

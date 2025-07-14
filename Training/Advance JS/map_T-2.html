@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="3" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>City</th>
+                <th>Department</th>
+            </tr>
+            </thead>
+        <tbody>
+
+        </tbody>
+        
+    </table>
+    <script>
+        fetch("https://dummyjson.com/users", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                console.log(data)
+
+                let userdata = data.users.map((user, index) => {
+                    console.log(user)
+                    return (
+                        `
+                    <tr>
+                        <td>${user.username}</td>
+                        <td>${user.password}</td>
+                        <td>${user.address.city}</td>
+                        <td>${user.company.department}</td>
+                        
+                        </tr>
+                    `
+                    )
+                })
+                document.querySelector("tbody").innerHTML = userdata.join("")
+
+            })
+
+    </script>
+
+</body>
+
+</html>
