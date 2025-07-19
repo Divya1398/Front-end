@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of Even Numbers</title>
+</head>
+<body>
+    <script>
+        let num = 1;         // Start from 1
+        let sum = 0;         // Variable to store total sum
+
+        while (num <= 20) {          // Loop from 1 to 20
+            if (num % 2 === 0) {     // Check if number is even
+                sum += num;          // Add even number to sum
+            }
+            num++;                   // Move to next number
+        }
+
+        console.log("Sum of even numbers from 1 to 20 is: " + sum);
+    </script>
+</body>
+</html>

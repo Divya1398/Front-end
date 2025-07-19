@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Greet User</title>
+</head>
+<body>
+    <h2>Greet User</h2>
+    <p id="greetingResult"></p>
+
+    <script>
+        function greetUser(userName) {
+            let message = `Hello, ${userName}!`;
+            document.getElementById("greetingResult").innerText = message;
+        }
+
+        // Call greetUser with a sample name
+        greetUser("Divya");
+    </script>
+</body>
+</html>

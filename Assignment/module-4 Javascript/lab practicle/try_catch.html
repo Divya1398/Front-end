@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try {
+            let numerator = 20;
+            let denominator = 0;
+
+            let result = numerator / denominator;
+
+            if (!isFinite(result)) {
+               
+                console.log("Division by zero is not allowed!");
+            }
+
+            console.log("Result:", result);
+        } catch (error) {
+            console.log("Error:", error.message);
+        }
+    </script>
+</body>
+
+</html>

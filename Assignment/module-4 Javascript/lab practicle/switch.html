@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day of the Week</title>
+</head>
+<body>
+    <h2>Enter a number (1 to 7) to get the day of the week</h2>
+
+    <input type="text" id="dayInput" placeholder="Enter number 1-7">
+    <button onclick="getDay()">Show Day</button>
+
+    <p id="output"></p>
+
+    <script>
+        function getDay() {
+            let day = document.getElementById("dayInput").value;
+            day = Number(day);
+
+            let dayName;
+
+            switch (day) {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                case 7:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Please enter a number between 1 and 7.";
+            }
+
+            document.getElementById("output").textContent = dayName;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do-While Loop Example</title>
+</head>
+<body>
+    <h3>Enter a number greater than 10:</h3>
+    <input type="number" id="userInput">
+    <button onclick="checkNumber()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+        let number;
+
+        function checkNumber() {
+            let input = document.getElementById("userInput").value;
+            number = Number(input);
+
+            do {
+                if (number <= 10) {
+                    document.getElementById("message").textContent = "Number must be greater than 10. Try again!";
+                    return; // Exit the function until correct input
+                } else {
+                    document.getElementById("message").textContent = "You entered: " + number + ", which is greater than 10.";
+                }
+            } while (number <= 10);
+        }
+    </script>
+</body>
+</html>
