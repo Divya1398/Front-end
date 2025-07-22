@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Promise Practice</title>
+</head>
+<body>
+    <script>
+         function output(res){
+            console.log(res)
+        }
+        let promise = new Promise((res, err) => {
+           let newdata = "Hello Promise!"
+            if (newdata === "Hello Promise!") {
+                res("sucess")
+            } else {
+                err("failed data")
+            }
+        })
+       .then((res)=>{
+        output(res)
+       },
+       ((err)=>{
+        output(err)
+       }
+    )
+    
+    )
+    </script>
+</body>
+</html>

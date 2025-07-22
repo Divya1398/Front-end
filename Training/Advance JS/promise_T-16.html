@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- let weather = "rainy";
+If "sunny", resolve "Go outside"
+
+If "rainy", reject "Take an umbrella"
+
+Handle result with .then() and .catch() -->
+<script>
+    function output(message) {
+            console.log(message);
+        }
+        let promise = new Promise((resolve, reject) => {
+            let weather = "rainy"
+            if (weather==="sunny") {
+                resolve("Go outside")
+            } else {
+                reject("Take an umbrella")
+            }
+        })
+         .then((message) => {
+                output(message);
+            })
+            .catch((error) => {
+                output(Error);
+            });
+
+</script>
+</body>
+</html>

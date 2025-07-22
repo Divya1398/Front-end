@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        const viewdata = async () => {
+            const res = await axios.get("https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLj7Bx8g_zvmGZFigtC2hJCGDrnZbro33I9QEeeHYCgSmwRHL64KykQVeMg79YYgB1Vxy574YKRhlH9PobjW4Uco3BRPeg075ewOr1vrXOAXYw2MVRukTosI-QctrrrKlv7s7ixUrQF6qW2ukhsNTeE0RDa1rtH0dlE_k7RcLGHeK0x2KZvcw38H1Q4kVbFHFghM7qbSV0p6CdIfJPIQQ44Q5-ifw3ZOu2qDREWQW2fXD-w26erKD2FA1yxhyHhRu-v9hJR3nQYR6ChkeyyvMuk5z02_CrxDDfzlceQ0&lib=ML1G0Xk_A6ATAkXyxiSt2BoNUVsYovjAZ")
+            console.log(res)
+            for(let user of res.data)
+            console.log(user)
+        }
+        viewdata()
+    </script>
+    
+
+</body>

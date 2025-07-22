@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 Promise Practice</title>
+</head>
+<body>
+    <script>
+        function output(resolve) {
+            console.log(resolve)
+        }
+        let promise = new Promise((resolve, reject) => {
+            let number = 3
+            resolve(number)
+        })
+        .then((number)=>{
+            return number*4
+        })
+         .then((number)=>{
+            return number+5
+        })
+         .then((Fnumber)=>{
+            output(Fnumber)
+        })
+         .catch((error)=>{
+           output (error)
+        })
+
+    </script>
+</body>
+</html>

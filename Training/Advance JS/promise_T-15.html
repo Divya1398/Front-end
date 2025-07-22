@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ATM Flow Simulation
+
+Step 1: Enter PIN (resolve "PIN Accepted")
+
+Step 2: Check balance (resolve "Sufficient Balance")
+
+Step 3: Withdraw (resolve "Withdrawal Successful")
+
+Handle any failure with .catch() -->
+    <script>
+
+        function output(message) {
+            console.log(message);
+        }
+
+        new Promise((resolve, reject) => {
+            let pinCorrect = true;
+            if (pinCorrect) {
+                resolve("PIN Accepted");
+            } else {
+                reject("Invalid PIN");
+            }
+        })
+            .then((result) => {
+                output(result);
+                return new Promise((resolve, reject) => {
+                    let hasBalance = true;
+                    if (hasBalance) {
+                        resolve("Sufficient Balance");
+                    } else {
+                        reject("Insufficient Balance");
+                    }
+                });
+            })
+            .then((result) => {
+                output(result);
+                return new Promise((resolve, reject) => {
+                    let withdrawalAllowed = true;
+                    if (withdrawalAllowed) {
+                        resolve("Withdrawal Successful");
+                    } else {
+                        reject("Withdrawal Failed");
+                    }
+                });
+            })
+            .then((result) => {
+                output(result);
+            })
+            .catch((error) => {
+                output("Error: " + error);
+            });
+
+
+
+
+    </script>
+</body>
+
+</html>

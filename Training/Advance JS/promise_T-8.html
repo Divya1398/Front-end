@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 Promise Practice</title>
+</head>
+
+<body>
+    <script>
+        function output(resolve) {
+            console.log(resolve)
+        }
+        let promise = new Promise((resolve, reject) => {
+            let data = "Hello"
+            resolve(data)
+        })
+            .then((data) => {
+                let upper = data.toUpperCase(data)
+                console.log(upper)
+                return upper
+            })
+            .then((data) => {
+                 let reversed = data.split('').reverse().join('')
+                console.log(reversed)
+                return reversed
+            })
+            .catch((Error) => {
+                output(Error)
+            })
+    </script>
+</body>
+
+</html>

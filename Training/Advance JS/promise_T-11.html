@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- setTimeout Promise Chain
+
+Wait 2 seconds → resolve "Waited 2s"
+
+Then wait 1 second → resolve "Waited 1s"
+
+Log both messages -->
+    <script>
+        function output(resolve) {
+            console.log(resolve)
+        }
+        let promise = new Promise((resolve, reject) => {
+            let data = "data"
+            setTimeout((data) => {
+                resolve("Waited 2s")
+            }, 2000);
+        })
+            .then((result) => {
+                output(result);
+
+                return new Promise((resolve, reject) => {
+                    let data = "data"
+                    setTimeout((data) => {
+                        resolve("Waited 1s")
+                    }, 1000);
+                })
+            })
+            .then((result) => {
+                output(result)
+            })
+            .catch((error) => {
+                output(error)
+            })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Error in Mid-Chain -->
+
+<!-- Resolve with 100
+
+First .then(): return value * 2
+
+Second .then(): throw an error
+
+Catch and log error -->
+<script>
+    function output(resolve) {
+            console.log(resolve)
+        }
+        let promise = new Promise((resolve, reject) => {
+            let n = 100
+            if (n===100) {
+                 resolve(100)
+            } else {
+                 reject("fail")
+            }
+        })
+        .then((n)=>{
+            let v = n*2
+            console.log(v)
+            return n
+        })
+         .then((n) => {
+            // Intentionally throw an error here
+            throw new Error("Something went wrong in second then");
+        })
+        .catch((error) => {
+            output(error.message);  // Catch and log error message
+        });
+</script>
+</body>
+</html>

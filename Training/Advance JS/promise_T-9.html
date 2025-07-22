@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Level 2 Promise Practice</title>
+</head>
+<body>
+    <!-- Variable: let marks = 60
+
+If marks >= 50, resolve "Pass"
+
+Else reject "Fail"
+
+Handle with .then() and .catch() -->
+<script>
+    function output(resolve) {
+        console.log(resolve)
+    }
+    let promise = new Promise((resolve, reject) => {
+        let marks = 60
+        if (marks>=50) {
+            resolve("pass")
+        } else {
+            reject("fail")
+        }
+    })
+    .then((result) => {
+        output(result)
+    })
+    .catch((error) => {
+        output(error)
+    })
+</script>
+</body>
+</html>

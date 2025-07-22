@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- User Status Example
+let userLoggedIn = true;
+let userName = "Divya";
+If logged in, resolve with userName
+
+.then() logs "Welcome, Divya!"
+
+Else reject "Please login first" -->
+    <script>
+        function output(resolve) {
+            console.log(resolve)
+        }
+        let promise = new Promise((resolve, reject) => {
+            let userLoggedIn = true;
+            let userName = "Divya";
+            if (userLoggedIn) {
+                resolve(userName)
+            } else {
+                reject("Please login first")
+            }
+        })
+            .then((result) => {
+                output(`welcome, ${result}!`)
+            })
+            .catch((err) => {
+                output(err)
+            })
+
+    </script>
+
+</body>
+
+</html>
