@@ -1,0 +1,155 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "name": "Why Children Dont Like Getting Out Of The Water",
+      "date": "2025-09-12",
+      "event": "Vacation",
+      "image": "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?_gl=1*1sypsus*_ga*NDc1OTUxMjc4LjE3NTY4MDMzOTU.*_ga_8JE65Q40S6*czE3NTczMzI0NTIkbzIkZzEkdDE3NTczMzI0NjUkajQ3JGwwJGgw",
+      "desc": "This is image vaction trip...."
+    },
+    {
+      "id": "2",
+      "name": "3 Tips for Your Family Spring Break at Amusement Park",
+      "date": "August 25, 2024",
+      "event": "Insight",
+      "image": "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?_gl=1*3i8rcd*_ga*NDc1OTUxMjc4LjE3NTY4MDMzOTU.*_ga_8JE65Q40S6*czE3NTczMzI0NTIkbzIkZzEkdDE3NTczMzI1NTEkajYwJGwwJGgw",
+      "desc": "This is image Insight trip...."
+    },
+    {
+      "id": "3",
+      "name": "5 Ways To Enjoy Waterland This Spring Break",
+      "date": "August 25, 2024",
+      "event": "Insight",
+      "image": "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?_gl=1*3i8rcd*_ga*NDc1OTUxMjc4LjE3NTY4MDMzOTU.*_ga_8JE65Q40S6*czE3NTczMzI0NTIkbzIkZzEkdDE3NTczMzI1NTEkajYwJGwwJGgw",
+      "desc": "This is image Insight trip...."
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "vivek",
+      "email": "vivek@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "divya",
+      "email": "divya@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "kushal",
+      "email": "kushal@gmail.com",
+      "password": "4321",
+      "status": "unblock"
+    },
+    {
+      "id": "1758371310429",
+      "name": "Divya ",
+      "email": "divyachavda26@gmail.com",
+      "password": "12345",
+      "status": "unblock"
+    }
+  ],
+  "team": [
+    {
+      "id": "1",
+      "name": "William John",
+      "work": "Doctor",
+      "image": "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?_gl=1*1msi709*_ga*MTI0NDcyNDM0MC4xNzQzNTk4OTg3*_ga_8JE65Q40S6*czE3NTgwMzA3NDQkbzEzJGcxJHQxNzU4MDMxMDM5JGo0OSRsMCRoMA..",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.",
+      "date": "2025-09-30",
+      "event": "Pro"
+    },
+    {
+      "id": "2",
+      "name": "David James",
+      "work": "Engineer",
+      "image": "https://media.istockphoto.com/id/1401481821/photo/handsome-young-man-in-working-on-laptop-stock-photo.jpg?b=1&s=612x612&w=0&k=20&c=DcG0adCfrfa--LTyWeQmbZcALogRsayKv_xbhGl4R5Y=",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt."
+    },
+    {
+      "id": "3",
+      "name": "Michael John",
+      "work": "Doctor",
+      "image": "https://media.istockphoto.com/id/1371989011/photo/cropped-shot-of-an-attractive-young-businesswoman-sending-a-text-while-working-in-her-office.jpg?b=1&s=612x612&w=0&k=20&c=gqg57IbPoQ1lE_c9oG0Qx2PAebvMZGcWv-isgRHsKMY=",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt."
+    }
+  ],
+  "gallary": [
+    {
+      "id": "1",
+      "Title": "fun",
+      "image": "https://images.pexels.com/photos/61129/pexels-photo-61129.jpeg?_gl=1*1hjall8*_ga*MTI0NDcyNDM0MC4xNzQzNTk4OTg3*_ga_8JE65Q40S6*czE3NTgwMzA3NDQkbzEzJGcxJHQxNzU4MDMxMjk0JGoxMCRsMCRoMA..",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit..",
+      "title": "food"
+    },
+    {
+      "id": "2",
+      "Title": "Activity",
+      "image": "https://images.pexels.com/photos/3453009/pexels-photo-3453009.jpeg?_gl=1*miwq4d*_ga*MTI0NDcyNDM0MC4xNzQzNTk4OTg3*_ga_8JE65Q40S6*czE3NTgwMzA3NDQkbzEzJGcxJHQxNzU4MDMxMjk0JGoxMCRsMCRoMA..",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.."
+    },
+    {
+      "id": "3",
+      "Title": "Food",
+      "image": "https://images.pexels.com/photos/6871900/pexels-photo-6871900.jpeg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.."
+    },
+    {
+      "id": "1758286166958",
+      "Title": "fun",
+      "image": "https://themewagon.github.io/WaterLand/img/gallery-1.jpg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.."
+    },
+    {
+      "id": "1758286261724",
+      "Title": "Fun",
+      "image": "https://themewagon.github.io/WaterLand/img/gallery-6.jpg",
+      "desc": "ss"
+    },
+    {
+      "id": "1758286284625",
+      "Title": "ss",
+      "image": "https://themewagon.github.io/WaterLand/img/gallery-4.jpg",
+      "desc": "ss"
+    },
+    {
+      "id": "1758286308548",
+      "Title": "ssss",
+      "image": "https://themewagon.github.io/WaterLand/img/gallery-5.jpg",
+      "desc": "dd"
+    },
+    {
+      "id": "1758286339452",
+      "Title": "ssr",
+      "image": "https://themewagon.github.io/WaterLand/img/gallery-3.jpg",
+      "desc": "s"
+    },
+    {
+      "id": "1758286360578",
+      "Title": "e",
+      "image": "https://themewagon.github.io/WaterLand/img/gallery-2.jpg",
+      "desc": "er"
+    }
+  ],
+  "Admin": [
+    {
+      "id": "1",
+      "email": "admin@123",
+      "password": "1234"
+    }
+  ]
+}

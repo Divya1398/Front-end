@@ -1,0 +1,69 @@
+{
+  "equipmentData": [
+    {
+      "id": "1",
+      "name": "Ventilator",
+      "department": "ICU",
+      "image": "https://static.wixstatic.com/media/83a223_3883d5675f094c108eac50c28fb2047c~mv2.webp/v1/fill/w_500,h_500,al_c,q_80,enc_avif,quality_auto/83a223_3883d5675f094c108eac50c28fb2047c~mv2.webp",
+      "status": "Working"
+    },
+    {
+      "id": "2",
+      "name": "ECG Machine",
+      "department": "Cardiology",
+      "image": "https://cdn.pixabay.com/photo/2018/01/18/09/26/equipment-3089883_1280.jpg",
+      "status": "Maintenance Due"
+    },
+    {
+      "name": "Infusion Pump",
+      "department": "General Ward",
+      "status": "Not-Working",
+      "image": "https://media.istockphoto.com/id/523563757/photo/intravenous-iv-drip.jpg?s=1024x1024&w=is&k=20&c=UOZBeOYfFQco6aZ77Rs92dcUL4VwHQs31jzI1Isi0bQ=",
+      "id": "3"
+    },
+    {
+      "id": "1758476103498",
+      "name": "Multipara Monitor",
+      "department": "Surgical",
+      "status": "Working",
+      "image": "https://cdn.pixabay.com/photo/2018/01/18/09/26/equipment-3089883_1280.jpg"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "vivek",
+      "email": "vivek@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "divya",
+      "email": "divya@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "kushal",
+      "email": "kushal@gmail.com",
+      "password": "4321",
+      "status": "unblock"
+    },
+    {
+      "id": "25d8",
+      "name": "jay",
+      "email": "jay@gmail.com",
+      "password": "1233"
+    }
+  ]
+}
