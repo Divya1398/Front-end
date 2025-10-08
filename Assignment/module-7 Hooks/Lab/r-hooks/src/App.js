@@ -6,9 +6,9 @@ import UsRef from './UsRef'
 function App() {
   return (
     <div>
-      {/* <Counter/> */}
-      {/* <Useeffect/> */}
-      <UsRef/>
+      <Counter/>
+      <Useeffect/>
+      {/* <UsRef/> */}
     </div>
   )
 }
