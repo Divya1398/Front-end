@@ -3,7 +3,7 @@
     {
       "id": "2",
       "name": "Bob",
-      "username": "bob02",
+      "username": "bob021",
       "email": "bob@example.com"
     },
     {
@@ -17,6 +17,12 @@
       "name": "divya chavda",
       "email": "divyachavda21@gmail.com",
       "username": "divya"
+    },
+    {
+      "id": "78d5",
+      "name": "divya chavda",
+      "username": "divya",
+      "email": "divya@gmail.com"
     }
   ]
 }

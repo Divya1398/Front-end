@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { MDBTable, MDBTableHead, MDBTableBody, MDBBtn } from 'mdb-react-ui-kit';
 import axios from 'axios';
+import Nav from './Nav';
 
 function Table() {
+   <Nav/>
   const [user, setUser] = useState([]);
 
   useEffect(() => {

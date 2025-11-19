@@ -19,6 +19,7 @@ function Header() {
                         <li className="list"><a href="#" className="nav-a">ABOUT US</a></li>
                         <li className="list"><a href="#" className="nav-a">SERVICES</a></li>
                         <li className="list"><a href="#" className="nav-a">CONTACT US</a></li>
+                         <li className="list"><a href="#" className="nav-a">Usereducer</a></li>
                     </ul>
                     <div className="icon">
                         <a href="" className="nav-b"><i className="fa-solid fa-bars"></i></a>
